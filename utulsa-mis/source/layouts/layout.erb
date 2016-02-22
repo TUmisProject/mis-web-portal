@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="https://utulsa-assets.s3.amazonaws.com/web/static/v2/assets/favicon.png" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+
+    <title>The University of Tulsa</title>
+
+    <script src="https://utulsa-assets.s3.amazonaws.com/web/static/v2/assets/application-v2.js" async></script>
+    <link rel="stylesheet" media="screen" href="https://utulsa-assets.s3.amazonaws.com/web/static/v2/assets/application-v2.css" />
+ <!--add aditional wanted CSS here --> 
+    <link rel='stylesheet' property='stylesheet' href='https://fast.fonts.net/cssapi/7b215a58-dada-4401-9ad4-84f2e38cead9.css' type='text/css' media='all' />
+  </head>
+
+    <body>
+      <%= partial "svg_icons" %>
+      <%= partial "header_search" %>
+      <%= partial "header_gold" %>
+      <%= partial "header_blue" %>
+
+      <div class="container">
+        <%= partial "breadcrumbs" %>
+        <%= yield %>
+      </div>
+
+      <%= partial "footer" %>
+
+      <!--[if lt IE 9]>
+      <script src="//utulsa-assets.s3.amazonaws.com/web/static/v1/javascripts/html5shiv.min.js"></script>
+      <script src="//utulsa-assets.s3.amazonaws.com/web/static/v1/javascripts/respond.min.js"></script>
+      <![endif]-->
+  </body>
+</html>
