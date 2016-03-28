@@ -202,7 +202,7 @@
 						<tbody class="faculty-table">
 							<tr class="clickableRow odd" data-url="https://faculty.utulsa.edu/~/salvatore-aurigemma" role="row">
 								<td class="thumbnail hidden-xs sorting_1">
-									<img src ="./images/aurigemma_salvatore.jpg" height="100" width="150">
+									<img src ="./sources/images/faculty/aurigemma_salvatore.jpg" height="100" width="150">
 								</td>
 								<td><a class="stealth black-href" href="https://faculty.utulsa.edu/~/salvatore-aurigemma"> Sal </a></td>
 								<td class="lname">
@@ -217,7 +217,7 @@
 						
 							<tr class="clickableRow even" data-url="/~/akhilesh-bajaj" role="row">
 								<td class="thumbnail hidden-xs sorting_1">
-									<img src ="./images/bajaj_akhilesh.jpg" height="100" width="150">
+									<img src ="./sources/images/faculty/bajaj_akhilesh.jpg" height="100" width="150">
 								</td>
 								<td><a class="stealth black-href" href="https://faculty.utulsa.edu/~/akhilesh-bajaj"> Akhilesh </a></td>
 								<td class="lname">
@@ -232,7 +232,7 @@
 
 							<tr class="clickableRow odd" data-url="/~/lori-leonard" role="row">
 								<td class="thumbnail hidden-xs sorting_1">
-									<img src ="./images/leonard_lori.jpg" height="100" width="150">
+									<img src ="./sources/images/faculty/leonard_lori.jpg" height="100" width="150">
 								</td>
 								<td><a class="stealth black-href" href="https://faculty.utulsa.edu/~/lori-leonard"> Lori </a></td>
 								<td class="lname">
