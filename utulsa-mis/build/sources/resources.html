@@ -14,22 +14,11 @@
 		<link rel='stylesheet' property='stylesheet' href='https://fast.fonts.net/cssapi/7b215a58-dada-4401-9ad4-84f2e38cead9.css' type='text/css' media='all' />
 		
 		<!--Scripts to import header-->
-		<script src="https://utulsa-assets.s3.amazonaws.com/web/static/v1/javascripts/jquery.1.11.2.min.js"></script>
-		<script src="https://utulsa-assets.s3.amazonaws.com/web/static/v1/javascripts/jquery-migrate.1.2.1.js"></script>
-		<script src="https://utulsa-assets.s3.amazonaws.com/web/static/v2/assets/app-menu.js"></script>
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 		<script>
-			$.get("/partials/header.html", function(data) {
-				$("#header").html(data);
-			}).done(function() {
-				menuApp.toggleMenu()
-				menuApp.toggleSubMenu()
-				menuApp.toggleSearch()
-			});
-
-			$.get("/partials/footer.html", function(data) {
-				$("#footer").html(data);
-			}).done(function() {
-				menuApp.toggleFooterWidgets()
+			$(function() {
+				$("#header").load("header.html");
+				$("#footer").load("footer.html");
 			});
 		</script>
 	</head>
