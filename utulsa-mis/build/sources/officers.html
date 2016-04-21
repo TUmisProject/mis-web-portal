@@ -12,9 +12,17 @@
 		<script src="https://utulsa-assets.s3.amazonaws.com/web/static/v2/assets/application-v2.js" async></script>
 		<link rel="stylesheet" media="screen" href="https://utulsa-assets.s3.amazonaws.com/web/static/v2/assets/application-v2.css" />
 		<link rel='stylesheet' property='stylesheet' href='https://fast.fonts.net/cssapi/7b215a58-dada-4401-9ad4-84f2e38cead9.css' type='text/css' media='all' />
+
+		<!--Scripts to import header and footer-->
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		<script>
+			$(function() {
+				$("#header").load("../header.html");
+				$("#footer").load("../footer.html");
+			});
+		</script>
 	</head>
 
-	
 	<body>
 		<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<defs>
@@ -52,598 +60,202 @@
 			</defs>
 		</svg>
 
-		<div class="header-search">
-			<div class="container">
-				<form action="https://search.utulsa.edu/" class="input-group searchform" method="get">
-					<input class="search-input form-control" name="s" placeholder="Search …" title="Search for:" type="search" value="">
-					<span class="input-group-btn">
-						<input class="btn btn-default" type="submit" value="Search">
-					</span>
-				</form>
-			</div>
-		</div>
+		<!-- #header will be replaced with header.html content -->
+		<div id="header"></div>
 
-		<div class="secondary">
-			<div class="container">
-				<nav class="secondary-navigation">
-					<div class="menu-secondary-container">
-						<ul class="nav navbar-nav" id="menu-secondary">
-							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14" id="menu-item-14">
-								<a href="http://admission.utulsa.edu/apply/" title="section" target="_blank">Apply</a>
-							</li>
-
-							<li class="section menu-item menu-item-type-custom menu-item-object-custom menu-item-13" id="menu-item-13">
-								<a href="http://utulsa.edu/offices-services/institutional-advancement/" target="_blank">Support TU</a>
-							</li>
-
-							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15" id="menu-item-15">
-								<a href="https://portal.utulsa.edu/" target="_blank">Login</a>
-							</li>
-
-							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6904" id="menu-item-6904">
-								<a href="https://faculty.utulsa.edu" target="_blank">Faculty</a>
-							</li>
-
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1501" id="menu-item-1501">
-								<a href="http://utulsa.edu/maps/" target="_blank">Maps</a>
-							</li>
-
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1583" id="menu-item-1583">
-								<a href="http://utulsa.edu/social-media-directory/" target="_blank">Social Media</a>
-							</li>
-
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3723" id="menu-item-3723">
-								<a href="http://utulsa.edu/contact/" target="_blank">Contact</a>
-							</li>
-
-							<li>
-								<a class="search-toggle">
-								<svg class="icon icon-search">
-									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-icon-search"></use>
-								</svg> </a>
-							</li>
-
-						</ul>
-					</div>
-				</nav>
-			</div>
-		</div>
-		
-		
-		<header class="site-header" id="masthead">
-			<div class="container">
-				<div class="site-branding">
-					<h1 class="site-title"><a href="http://mis.misutulsa.com/" rel="home"> <img src="https://utulsa-assets.s3.amazonaws.com/web/static/v2/assets/tulsa-logo-v2.png" alt="Tulsa logo 14349f539cc3438e46002f0613ccda844a7f426169cb5328eaefd64084e78a0d"></a></h1>
-				</div>
-				<a class="menu-toggle visible-xs visible-sm"><span></span></a>
-				<a class="search-toggle visible-xs visible-sm">
-				<svg class="icon icon-search">
-					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-icon-search"></use>
-				</svg> </a>
-				<nav class="main-navigation collapse navbar-collapse navbar-ex1-collapse" id="site-navigation">
-					<div class="menu-primary-container">
-						<ul class="nav navbar-nav" id="menu-primary">
-							
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-2467" id="menu-item-2467">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="http://mis.misutulsa.com/sources/about.html">MIS Programs</a>
-								
-							
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1679" id="menu-item-1679">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="http://mis.misutulsa.com/sources/courses.html">MIS Courses</a>
-
-								<div class="dropdown">
-							<div class="container">
-								<div class="row">
-									<div class="dropdown-menu" style="margin-left: 2em">
-										<div class="col-md-3 8">
-											<ul>
-												Business Core Requirements
-												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-													<a href="http://mis.misutulsa.com/sources/courseInfo/mis1001.html">MIS 1001: Intro to Spreadsheets</a>
-												</li>
-												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-													<a href="http://mis.misutulsa.com/sources/courseInfo/mis2003.html">MIS 2003: Intro to Management Information Systems</a>
-												</li>
-												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-													<a href="http://mis.misutulsa.com/sources/courseInfo/mis3001.html">MIS 3001: Advanced Spreadsheet Application</a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-md-3 1">
-											<ul>
-												
-												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-													<a href="http://mis.misutulsa.com/sources/courseInfo/mis2013.html">MIS 2013: Business Programming Concepts I</a>
-												</li>
-												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-													<a href="http://mis.misutulsa.com/sources/courseInfo/mis3023.html">MIS 3023: Business Programming Concepts II</a>
-												</li>
-												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-													<a href="http://mis.misutulsa.com/sources/courseInfo/mis4033.html">MIS 4033: Business Programming Concepts III</a>
-												</li>
-											</ul>
-										</div>
-
-										<div class="col-md-3 1">
-											<ul>
-												
-												
-												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-													<a href="http://mis.misutulsa.com/sources/courseInfo/mis3043.html">MIS 3043: Telecommunications</a>
-												</li>
-												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-													<a href="http://mis.misutulsa.com/sources/courseInfo/mis3053.html">MIS 3053: Database Design & Application</a>
-												</li>
-												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-													<a href="http://mis.misutulsa.com/sources/courseInfo/mis4053.html">MIS 4053: Systems Analysis & Design</a>
-												</li>
-												
-											</ul>
-										</div>
-
-										<div class="col-md-3 8">
-											<ul>
-												
-												
-												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-													<a href="http://mis.misutulsa.com/sources/courseInfo/mis4073.html">MIS 4073: Information Security</a>
-												</li>
-												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-													<a href="http://mis.misutulsa.com/sources/courseInfo/mis4093.html">MIS 4093: Systems Development Project</a>
-												</li>
-												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-													<a href="http://mis.misutulsa.com/sources/courseInfo/mis4133.html">MIS 4133: Software Systems</a>
-												</li>
-											</ul>
-										</div>
-
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-2511" id="menu-item-2511">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="http://mis.misutulsa.com/sources/faculty.html">Faculty</a>
-
-								<div class="dropdown">
-									<div class="container">
-										<div class="row">
-											<div class="dropdown-menu" style="margin-left: 2em">
-												<div class="col-md-3 1">
-													<ul>
-														<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3213" id="menu-item-3213">
-															<a href="http://mis.misutulsa.com/sources/faculty.html">Sal Aurigemma</a>
-														</li>
-													</ul>
-												</div>
-
-												<div class="col-md-3 4">
-													<ul>
-														<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3213" id="menu-item-3213">
-															<a href="http://mis.misutulsa.com/sources/faculty.html">Akhilesh Bajaj</a>
-														</li>
-													</ul>
-												</div>
-
-												<div class="col-md-3 8">
-													<ul>
-														<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3213" id="menu-item-3213">
-															<a href="http://mis.misutulsa.com/sources/faculty.html">Ryan Haight</a>
-														</li>
-													</ul>
-												</div>
-
-												<div class="col-md-3 12">
-													<ul>
-														<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3213" id="menu-item-3213">
-															<a href="http://mis.misutulsa.com/sources/faculty.html">Lori Leonard</a>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-2467" id="menu-item-2467">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="http://mis.misutulsa.com/sources/resources.html">Class Resources</a>
-								
-								
-								
-
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-2456" id="menu-item-2456">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="http://mis.misutulsa.com/sources/itu.html">iTU</a>
-
-								
-
-							
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-2467" id="menu-item-2467">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="http://mis.misutulsa.com/sources/career.html">Career Opportunities</a>
-							</li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-		</header>
-		
 		<div class="container">
-    <div class="section-meta utility">
-        <div class="breadcrumbs col-xs-9">
-            <!-- Breadcrumb NavXT 5.2.2 -->
-            <span><a class="home" href="http://mis.misutulsa.com/index.html" title="Home">Home</a></span> / <span style="color:black">iTU Officers</span>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12 col-md-offset-.7">
-            <article>
-
-                <div class="entry-content">
-
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1> iTU Officers </h1>
-                            
-                            <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
-                                <div class="hideme">
-                                </div>
-                            </div>
-                            <table id="DataTables_Table_0" class="table table-hover dataTable no-footer">
-                                <thead>
-                                <tr role="row">
-                                    <th class="hidden-xs sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 108px;" aria-sort="ascending" aria-label=": activate to sort column descending"></th>
-                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 200px;" aria-label="Last Name: activate to sort column ascending">Name</th>
-                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 200px;" aria-label="Last Name: activate to sort column ascending">Position</th>
-                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 200px;" aria-label="Position: activate to sort column ascending">Email</th>
-                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="4" style="width: 200px;" aria-label="Description: activate to sort column ascending">Description</th>
-
-                                </tr>
-                                </thead>
-
-                                <tbody class="faculty-table">
-                                <tr class="clickableRow odd" data-url="https://faculty.utulsa.edu/~/salvatore-aurigemma" role="row">
-                                    <td class="thumbnail hidden-xs sorting_1">
-                                        <img src="http://mis.misutulsa.com/sources/images/itu/abby.jpg" height="150" width="200">
-                                    </td>
-                                    
-                                    <td class="lname">Abby Dolan</td>
-                                    
-                                    <td class="position">President</td>
-                                    
-                                    <td class="email">abby-dolan@utulsa.edu</td>
-                                 
-                                    <td>
-                                        <p> 
-                                        	The iTU president is responsible for overseeing the iTU program as a whole, including coordinating monthly Drofessional Development 
-                                        	meetings, planning mentorship events and banquets, and serving as the liaison between MIS students, MIS faculty, and IT professionals 
-                                        	wishing to come meet TU MIS students. The President makes sure each officer is fulfilling their respective duties and serves as 
-                                        	a resource if any additional assistance is required for operations and logistics within the organization to run smoothly.
-                                        </p>
-                                    </td>
-
-                                </tr> <!-- President -->
-                                
-                                <tr class="clickableRow even" data-url="/~/akhilesh-bajaj" role="row">
-                                    <td class="thumbnail hidden-xs sorting_1">
-                                        <img src="http://mis.misutulsa.com/sources/images/itu/rachael.jpg" height="100" width="150">
-                                    </td>
-                                  
-                                    <td class="lname">Rachael Gantner</td>
-                                                                      
-                                    <td class="position">Vice President</td>
-                                    
-                                    <td class="email">rachael-gantner@utulsa.edu</td>
-
-                                    <td>
-                                        <p> 
-                                        	The iTU Vice President is responsible for assisting the President in coordinating monthly Profesional Development meetings 
-                                        	and ordering food for executive meetings for the officers. Their primary responsibility is planning the iTU End of the Year 
-                                        	Banquet where MIS seniors and outstanding TU MIS Alumni are recognized and installations for incoming iTU officers take place.
-                                        </p>
-                                    </td>
-
-                                </tr> <!-- VP -->
-                                
-                                <tr class="clickableRow even" data-url="/~/akhilesh-bajaj" role="row">
-                                    <td class="thumbnail hidden-xs sorting_1">
-                                        <img src="http://mis.misutulsa.com/sources/images/itu/david.jpg" height="100" width="150">
-                                    </td>
-                                    
-                                    <td class="lname">David Rohfing</td>
-                                    
-                                    <td class="position">Treasurer</td>
-                                    
-                                    <td class="email">david-rohlfing@utulsa.edu</td>
-
-                                    <td>
-                                        <p>   
-                                        	The iTU Treasurer is responsible for handling all finances for our organization. They ensure our budget is kept on track, dues 
-                                        	are collected from members, and reimbursements are taken care of properly and in a timely manner.
-                                        </p>
-                                    </td>
-
-                                </tr> <!-- Treasurer -->
-                                
-                                <tr class="clickableRow even" data-url="/~/akhilesh-bajaj" role="row">
-                                    <td class="thumbnail hidden-xs sorting_1">
-                                        <img src="http://mis.misutulsa.com/sources/images/itu/melanie.jpg" height="100" width="150">
-                                        
-                                    <td class="lname">Melanie Cummings</td>
-                                   
-                                    <td class="position">Secretary</td>
-                                    
-                                    <td class="email">melanie-cummings@utulsa.edu</td>
-                                    
-                                    <td>
-                                        <p>
-                                        	The iTU Secretary is responsible for recording officer meeting minutes and ensuring iTU members are properly accounted for 
-                                        	attending the monthly Professional Development meetings. They also create the digital signage to be displayed in various places 
-                                        	throughout campus, as well as the iTU information sent to all MIS majors and minors prior to our monthly Professional Development 
-                                        	meetings.
-                                        </p>
-                                    </td>
-
-                                </tr> <!-- Secretary -->
-
-                                <tr class="clickableRow odd" data-url="/~/lori-leonard" role="row">
-                                    <td class="thumbnail hidden-xs sorting_1">
-                                        <img src="http://mis.misutulsa.com/sources/images/itu/gunner.jpg" height="100" width="150">
-                                    </td>
-                                   
-                                    <td class="lname">Gunner Jensen</td>
-                                  
-                                    <td class="position">Web Master</td>
-                                    
-                                    <td class="email">gunner-jensen@utulsa.edu</td>
-
-                                    <td>
-                                        <p> 
-                                        	The iTU Web Master is responsible for maintaining the MIS website, iTU social media, and overseeing all technology-related tasks.  
-                                        </p>
-                                    </td>
-
-                                </tr> <!-- Web master -->
-                                
-                                <tr class="clickableRow odd" data-url="/~/lori-leonard" role="row">
-                                    <td class="thumbnail hidden-xs sorting_1">
-                                        <img src="http://mis.misutulsa.com/sources/images/itu/jocelyn.jpg" height="100" width="150">
-
-                                    </td>
-                                    
-                                    <td class="lname">Jocelyn Sheffield</td>
-                                    
-                                    <td class="position">Senior Representative</td>
-                                    
-                                    <td class="email">jocelyn-sheffield@utulsa.edu</td>
-
-                                    <td>
-                                        <p>
-                                        	The Senior Representative is responsible for communication with the Junior class about all things iTU. This involves 
-                                        	encouraging attendance, getting people excited about events, and continuing to spread iTU throughout campus. Like the 
-                                        	Junior Representative, recruitment and communication is their primary job.
-                                        </p>
-                                    </td>
-
-                                </tr> <!-- Senior Rep -->
-                                
-                                <tr class="clickableRow odd" data-url="/~/lori-leonard" role="row">
-                                    <td class="thumbnail hidden-xs sorting_1">
-                                        <img src="http://mis.misutulsa.com/sources/images/itu/ryan.jpg" height="100" width="150">
-                                    </td>
-                                    
-                                    <td class="lname">Ryan Token</td>
-                                   
-                                    <td class="position">Junior Representative</td>
-                                    
-                                    <td class="email">ryan-token@utulsa.edu</td>
-
-                                    <td>
-                                        <p>
-                                        	Junior Representative is responsible for communication with the Junior class about all things iTU. This involves encouraging 
-                                        	attendance, getting people excited about events, and continuing to spread iTU throughout campus. Recruitment and communication is  
-                                        	their primary job.
-                                        </p>
-                                    </td>
-
-                                </tr> <!-- Junior Rep -->
-
-                                <tr class="clickableRow odd" data-url="/~/lori-leonard" role="row">
-                                    <td class="thumbnail hidden-xs sorting_1">
-                                        <img src="http://mis.misutulsa.com/sources/images/itu/ashley.jpg" height="100" width="150">
-                                    </td>
-                                  
-                                    <td class="lname"> Ashley Etter</td>
-                                  
-                                    <td class="position">Mentorship Chair</td>
-                                    
-                                    <td class="email">ashley-etter@utulsa.edu</td>
-
-                                    <td>
-                                        <p>
-                                        	The iTU Mentorship Chair is responsible for advertising and arranging iTU Mentorship events, pairing MIS students interested in the 
-                                        	iTU mentor program with MIS mentors, and general recruitment of Management Information Systems majors and minors for iTU.
-                                        </p>
-                                    </td>
-
-                                </tr> <!-- Mentor Chair -->
-                                </tbody>
-                            </table>
-
-
-
-                        </div><!-- .entry-content -->
-            </article>
-        </div>
-    </div>
-
-</div>
-
-		
-
-		<footer class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="footer-widgets">
-						<aside id="nav_menu-2" class="col-sm-4 col-md-3 widget widget_nav_menu">
-							<h6 class="widget-title">Academics</h6>
-							<div class="menu-footer-academics-container">
-								<ul id="menu-footer-academics" class="menu">
-									<li id="menu-item-1442" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1442">
-										<a href="http://artsandsciences.utulsa.edu/">Kendall College of Arts &amp; Sciences</a>
-									</li>
-									<li id="menu-item-1443" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1443">
-										<a href="http://business.utulsa.edu/">Collins College of Business</a>
-									</li>
-									<li id="menu-item-1444" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1444">
-										<a href="http://engineering.utulsa.edu/">College of Engineering &amp; Natural Sciences</a>
-									</li>
-									<li id="menu-item-3428" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3428">
-										<a href="http://healthsciences.utulsa.edu/">College of Health Sciences</a>
-									</li>
-									<li id="menu-item-1446" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1446">
-										<a href="http://law.utulsa.edu/">College of Law</a>
-									</li>
-									<li id="menu-item-3427" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3427">
-										<a href="http://graduate.utulsa.edu/">Graduate School</a>
-									</li>
-									<li id="menu-item-3682" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3682">
-										<a href="http://utulsa.edu/academics/continuing-education/">Continuing Education</a>
-									</li>
-									<li id="menu-item-4888" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4888">
-										<a href="http://utulsa.edu/departments-schools/">Departments &amp; Schools</a>
-									</li>
-								</ul>
-							</div>
-						</aside>
-						<aside id="nav_menu-3" class="col-sm-4 col-md-3 widget widget_nav_menu">
-							<h6 class="widget-title">Offices &amp; Services</h6>
-							<div class="menu-offices-services-container">
-								<ul id="menu-offices-services" class="menu">
-									<li id="menu-item-1436" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1436">
-										<a href="http://admission.utulsa.edu/">Admission and Financial Aid</a>
-									</li>
-									<li id="menu-item-3685" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3685">
-										<a href="http://utulsa.edu/campus-life/alexander-health-center/">Alexander Health Center</a>
-									</li>
-									<li id="menu-item-6716" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6716">
-										<a href="http://utulsa.edu/offices/bursar/">Bursar</a>
-									</li>
-									<li id="menu-item-3687" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3687">
-										<a href="http://utulsa.edu/campus-life/campus-recreation/collins-fitness-center/">Collins Fitness Center</a>
-									</li>
-									<li id="menu-item-3688" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3688">
-										<a href="http://admission.utulsa.edu/financial-aid/">Financial Aid</a>
-									</li>
-									<li id="menu-item-3689" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3689">
-										<a href="http://utulsa.edu/mcfarlin-library/">McFarlin Library</a>
-									</li>
-									<li id="menu-item-3690" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3690">
-										<a href="http://utulsa.edu/offices/registrar/">Office of the Registrar</a>
-									</li>
-									<li id="menu-item-3871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3871">
-										<a href="http://utulsa.edu/offices/">Offices</a>
-									</li>
-								</ul>
-							</div>
-						</aside>
-						<aside id="nav_menu-4" class="col-sm-4 col-md-2 widget widget_nav_menu">
-							<h6 class="widget-title">Explore</h6>
-							<div class="menu-explore-container">
-								<ul id="menu-explore" class="menu">
-									<li id="menu-item-3691" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3691">
-										<a href="http://utulsa.edu/a-z/">A-Z Index</a>
-									</li>
-									<li id="menu-item-3712" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3712">
-										<a href="http://utulsa.edu/arts-at-tu/">Arts @ TU</a>
-									</li>
-									<li id="menu-item-6896" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6896">
-										<a target="_blank" href="http://bulletin.utulsa.edu/">Bulletin/Course Catalog</a>
-									</li>
-									<li id="menu-item-1426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1426">
-										<a target="_blank" href="http://utulsa.edu/courses/schedule/">Courses</a>
-									</li>
-									<li id="menu-item-5522" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5522">
-										<a href="http://utulsa.edu/degrees/">Degrees</a>
-									</li>
-									<li id="menu-item-3695" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3695">
-										<a href="http://utulsa.edu/maps/">Maps</a>
-									</li>
-									<li id="menu-item-3696" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3696">
-										<a href="http://tulsa.university-tour.com" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://tulsa.university-tour.com', 'Virtual Tour');" target="_blank">Virtual Tour</a>
-									</li>
-								</ul>
-							</div>
-						</aside><div class="clearfix visible-sm" style="margin: 60px 0;"></div>
-						<aside id="nav_menu-5" class="col-sm-4 col-md-2 widget widget_nav_menu">
-							<h6 class="widget-title">Resources</h6>
-							<div class="menu-footer-resources-container">
-								<ul id="menu-footer-resources" class="menu">
-									<li id="menu-item-4865" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4865">
-										<a href="http://utulsa.edu/academic-calendar/">Academic Calendar</a>
-									</li>
-									<li id="menu-item-3699" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3699">
-										<a href="http://utulsa.edu/offices/campus-security/">Campus Security</a>
-									</li>
-									<li id="menu-item-5527" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5527">
-										<a href="http://utulsa.edu/contact/">Contact</a>
-									</li>
-									<li id="menu-item-6895" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6895">
-										<a href="http://utulsa.edu/about/working-at-tu/">Employment</a>
-									</li>
-									<li id="menu-item-3697" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3697">
-										<a target="_blank" href="http://calendar.utulsa.edu">Events Calendar</a>
-									</li>
-									<li id="menu-item-3698" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3698">
-										<a href="http://utulsa.edu/offices/information-technology/">Information Technology</a>
-									</li>
-									<li id="menu-item-3702" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3702">
-										<a href="https://portal.utulsa.edu">TU Portal</a>
-									</li>
-									<li id="menu-item-6012" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6012">
-										<a href="http://utulsa.edu/offices/university-relations/digital-communications/web-site-issue-report/">Web Site Issue Report</a>
-									</li>
-								</ul>
-							</div>
-						</aside>
-						<aside id="socials_widget-3" class="col-sm-4 col-md-2 widget socials-widget">
-							<h6 class="widget-title">Connect With TU</h6>
-							<div class="widget-wrap">
-
-								<a class="icon-facebook" href="https://www.facebook.com/utulsa.edu" title="facebook" target="_blank">
-								<svg class="icon icon-facebook">
-									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
-								</svg> </a>
-
-								<a class="icon-twitter" href="https://twitter.com/utulsa" title="twitter" target="_blank">
-								<svg class="icon icon-twitter">
-									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
-								</svg> </a>
-
-								<a class="icon-instagram" href="http://instagram.com/utulsa" title="instagram" target="_blank">
-								<svg class="icon icon-instagram">
-									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram"></use>
-								</svg> </a>
-
-								<div class="content-wrap">
-									<a href="http://utulsa.edu/social-media-directory/">Social Media Directory</a>
-									<a href="http://utulsa.edu/social-media-policy/">Social Media Policy</a>
-								</div>
-							</div>
-
-						</aside>
-					</div>
+			<div class="section-meta utility">
+				<div class="breadcrumbs col-xs-9">
+					<!-- Breadcrumb NavXT 5.2.2 -->
+					<span><a class="home" href="http://mis.misutulsa.com/index.html" title="Home">Home</a></span> / <span style="color:black">iTU Officers</span>
 				</div>
 			</div>
 
-			<div class="site-info">
-				<div class="container">
-					© 2016 The University of Tulsa MIS Senior Project
+			<div class="row">
+				<div class="col-md-12 col-md-offset-.7">
+					<article>
+
+						<div class="entry-content">
+
+							<div class="row">
+								<div class="col-md-12">
+									<h1> iTU Officers </h1>
+
+									<div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+										<div class="hideme"></div>
+									</div>
+									<table id="DataTables_Table_0" class="table table-hover dataTable no-footer">
+										<thead>
+											<tr role="row">
+												<th class="hidden-xs sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 108px;" aria-sort="ascending" aria-label=": activate to sort column descending"></th>
+												<th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 200px;" aria-label="Last Name: activate to sort column ascending">Name</th>
+												<th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 200px;" aria-label="Last Name: activate to sort column ascending">Position</th>
+												<th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 200px;" aria-label="Position: activate to sort column ascending">Email</th>
+												<th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="4" style="width: 200px;" aria-label="Description: activate to sort column ascending">Description</th>
+
+											</tr>
+										</thead>
+
+										<tbody class="faculty-table">
+											<tr class="clickableRow odd" data-url="https://faculty.utulsa.edu/~/salvatore-aurigemma" role="row">
+												<td class="thumbnail hidden-xs sorting_1"><img src="http://mis.misutulsa.com/sources/images/itu/abby.jpg" height="150" width="200"></td>
+
+												<td class="lname">Abby Dolan</td>
+
+												<td class="position">President</td>
+
+												<td class="email">abby-dolan@utulsa.edu</td>
+
+												<td>
+												<p>
+													The iTU president is responsible for overseeing the iTU program as a whole, including coordinating monthly Drofessional Development
+													meetings, planning mentorship events and banquets, and serving as the liaison between MIS students, MIS faculty, and IT professionals
+													wishing to come meet TU MIS students. The President makes sure each officer is fulfilling their respective duties and serves as
+													a resource if any additional assistance is required for operations and logistics within the organization to run smoothly.
+												</p></td>
+
+											</tr>
+											<!-- President -->
+
+											<tr class="clickableRow even" data-url="/~/akhilesh-bajaj" role="row">
+												<td class="thumbnail hidden-xs sorting_1"><img src="http://mis.misutulsa.com/sources/images/itu/rachael.jpg" height="100" width="150"></td>
+
+												<td class="lname">Rachael Gantner</td>
+
+												<td class="position">Vice President</td>
+
+												<td class="email">rachael-gantner@utulsa.edu</td>
+
+												<td>
+												<p>
+													The iTU Vice President is responsible for assisting the President in coordinating monthly Profesional Development meetings
+													and ordering food for executive meetings for the officers. Their primary responsibility is planning the iTU End of the Year
+													Banquet where MIS seniors and outstanding TU MIS Alumni are recognized and installations for incoming iTU officers take place.
+												</p></td>
+
+											</tr>
+											<!-- VP -->
+
+											<tr class="clickableRow even" data-url="/~/akhilesh-bajaj" role="row">
+												<td class="thumbnail hidden-xs sorting_1"><img src="http://mis.misutulsa.com/sources/images/itu/david.jpg" height="100" width="150"></td>
+
+												<td class="lname">David Rohfing</td>
+
+												<td class="position">Treasurer</td>
+
+												<td class="email">david-rohlfing@utulsa.edu</td>
+
+												<td>
+												<p>
+													The iTU Treasurer is responsible for handling all finances for our organization. They ensure our budget is kept on track, dues
+													are collected from members, and reimbursements are taken care of properly and in a timely manner.
+												</p></td>
+
+											</tr>
+											<!-- Treasurer -->
+
+											<tr class="clickableRow even" data-url="/~/akhilesh-bajaj" role="row">
+												<td class="thumbnail hidden-xs sorting_1"><img src="http://mis.misutulsa.com/sources/images/itu/melanie.jpg" height="100" width="150"><td class="lname">Melanie Cummings</td>
+
+												<td class="position">Secretary</td>
+
+												<td class="email">melanie-cummings@utulsa.edu</td>
+
+												<td>
+												<p>
+													The iTU Secretary is responsible for recording officer meeting minutes and ensuring iTU members are properly accounted for
+													attending the monthly Professional Development meetings. They also create the digital signage to be displayed in various places
+													throughout campus, as well as the iTU information sent to all MIS majors and minors prior to our monthly Professional Development
+													meetings.
+												</p></td>
+
+											</tr>
+											<!-- Secretary -->
+
+											<tr class="clickableRow odd" data-url="/~/lori-leonard" role="row">
+												<td class="thumbnail hidden-xs sorting_1"><img src="http://mis.misutulsa.com/sources/images/itu/gunner.jpg" height="100" width="150"></td>
+
+												<td class="lname">Gunner Jensen</td>
+
+												<td class="position">Web Master</td>
+
+												<td class="email">gunner-jensen@utulsa.edu</td>
+
+												<td>
+												<p>
+													The iTU Web Master is responsible for maintaining the MIS website, iTU social media, and overseeing all technology-related tasks.
+												</p></td>
+
+											</tr>
+											<!-- Web master -->
+
+											<tr class="clickableRow odd" data-url="/~/lori-leonard" role="row">
+												<td class="thumbnail hidden-xs sorting_1"><img src="http://mis.misutulsa.com/sources/images/itu/jocelyn.jpg" height="100" width="150"></td>
+
+												<td class="lname">Jocelyn Sheffield</td>
+
+												<td class="position">Senior Representative</td>
+
+												<td class="email">jocelyn-sheffield@utulsa.edu</td>
+
+												<td>
+												<p>
+													The Senior Representative is responsible for communication with the Junior class about all things iTU. This involves
+													encouraging attendance, getting people excited about events, and continuing to spread iTU throughout campus. Like the
+													Junior Representative, recruitment and communication is their primary job.
+												</p></td>
+
+											</tr>
+											<!-- Senior Rep -->
+
+											<tr class="clickableRow odd" data-url="/~/lori-leonard" role="row">
+												<td class="thumbnail hidden-xs sorting_1"><img src="http://mis.misutulsa.com/sources/images/itu/ryan.jpg" height="100" width="150"></td>
+
+												<td class="lname">Ryan Token</td>
+
+												<td class="position">Junior Representative</td>
+
+												<td class="email">ryan-token@utulsa.edu</td>
+
+												<td>
+												<p>
+													Junior Representative is responsible for communication with the Junior class about all things iTU. This involves encouraging
+													attendance, getting people excited about events, and continuing to spread iTU throughout campus. Recruitment and communication is
+													their primary job.
+												</p></td>
+
+											</tr>
+											<!-- Junior Rep -->
+
+											<tr class="clickableRow odd" data-url="/~/lori-leonard" role="row">
+												<td class="thumbnail hidden-xs sorting_1"><img src="http://mis.misutulsa.com/sources/images/itu/ashley.jpg" height="100" width="150"></td>
+
+												<td class="lname"> Ashley Etter</td>
+
+												<td class="position">Mentorship Chair</td>
+
+												<td class="email">ashley-etter@utulsa.edu</td>
+
+												<td>
+												<p>
+													The iTU Mentorship Chair is responsible for advertising and arranging iTU Mentorship events, pairing MIS students interested in the
+													iTU mentor program with MIS mentors, and general recruitment of Management Information Systems majors and minors for iTU.
+												</p></td>
+
+											</tr>
+											<!-- Mentor Chair -->
+										</tbody>
+									</table>
+
+								</div><!-- .entry-content -->
+					</article>
 				</div>
 			</div>
-		</footer>
+
+		</div>
+
+		<!-- #footer will be replaced with footer.html content-->
+		<div id="footer"></div>
 
 		<!--[if lt IE 9]>
 		<script src="//utulsa-assets.s3.amazonaws.com/web/static/v1/javascripts/html5shiv.min.js"></script>

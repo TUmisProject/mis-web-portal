@@ -12,9 +12,17 @@
 		<script src="https://utulsa-assets.s3.amazonaws.com/web/static/v2/assets/application-v2.js" async></script>
 		<link rel="stylesheet" media="screen" href="https://utulsa-assets.s3.amazonaws.com/web/static/v2/assets/application-v2.css" />
 		<link rel='stylesheet' property='stylesheet' href='https://fast.fonts.net/cssapi/7b215a58-dada-4401-9ad4-84f2e38cead9.css' type='text/css' media='all' />
+
+		<!--Scripts to import header and footer-->
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		<script>
+			$(function() {
+				$("#header").load("../../header.html");
+				$("#footer").load("../../footer.html");
+			});
+		</script>
 	</head>
 
-	
 	<body>
 		<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<defs>
@@ -52,393 +60,120 @@
 			</defs>
 		</svg>
 
-		<div class="header-search">
+		<!-- #header will be replaced with header.html content -->
+		<div id="header"></div>
+
+		<div id="page">
 			<div class="container">
-				<form action="https://search.utulsa.edu/" class="input-group searchform" method="get">
-					<input class="search-input form-control" name="s" placeholder="Search …" title="Search for:" type="search" value="">
-					<span class="input-group-btn">
-						<input class="btn btn-default" type="submit" value="Search">
-					</span>
-				</form>
-			</div>
-		</div>
+				<div class="row">
+					<div id="primary" class="page-full col-md-10 col-md-offset-1 ">
+						<a id="breadcrumbs"> <span><a class="home" href="http://mis.misutulsa.com/index.html" title="Home">Home</a></span> / <span><a href="http://mis.misutulsa.com/sources/courses.html" title="Courses">Courses</span></a> / MIS-4093
 
-		<div class="secondary">
-			<div class="container">
-				<nav class="secondary-navigation">
-					<div class="menu-secondary-container">
-						<ul class="nav navbar-nav" id="menu-secondary">
-							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14" id="menu-item-14">
-								<a href="http://admission.utulsa.edu/apply/" title="section" target="_blank">Apply</a>
-							</li>
+						<h1>Management Information Systems&nbsp;-&nbsp;MIS-4093</h1>
 
-							<li class="section menu-item menu-item-type-custom menu-item-object-custom menu-item-13" id="menu-item-13">
-								<a href="http://utulsa.edu/offices-services/institutional-advancement/" target="_blank">Support TU</a>
-							</li>
+						<br>
+						<table width="100%">
+							<tr>
+								<td width="25%"><strong>Course Number:</strong></td>
+								<td width="75%">MIS-4093</td>
+							</tr>
+							<tr>
+								<td width="25%"><strong>Title:</strong></td>
+								<td width="75%">Systems Development Project</td>
+							</tr>
 
-							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15" id="menu-item-15">
-								<a href="https://portal.utulsa.edu/" target="_blank">Login</a>
-							</li>
-
-							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6904" id="menu-item-6904">
-								<a href="https://faculty.utulsa.edu" target="_blank">Faculty</a>
-							</li>
-
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1501" id="menu-item-1501">
-								<a href="http://utulsa.edu/maps/" target="_blank">Maps</a>
-							</li>
-
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1583" id="menu-item-1583">
-								<a href="http://utulsa.edu/social-media-directory/" target="_blank">Social Media</a>
-							</li>
-
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3723" id="menu-item-3723">
-								<a href="http://utulsa.edu/contact/" target="_blank">Contact</a>
-							</li>
-
-							<li>
-								<a class="search-toggle">
-								<svg class="icon icon-search">
-									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-icon-search"></use>
-								</svg> </a>
-							</li>
-
-						</ul>
+							<tr>
+								<td width="25%"><strong>Block:</strong></td>
+								<td width="75%">MIS Major</td>
+							</tr>
+							<tr>
+								<td width="25%"><strong>Course Description:</strong></td>
+								<td width="75%">
+								<p>
+									The course is primarily intended to be a capstone experience for the undergraduate degree in
+									Management Information Systems in which the student employs skills learned in all other MIS coursework.
+									You will be required to deliver a project for this course that will encompass systems analysis and design,
+									database management systems, data communications and programming languages.
+								</p>
+								<p>
+									This class will give each student a real-world experience with systems allowing teams to work with real
+									customers in designing, developing, and implementing an application/system to meet a true business need.
+									Students will be responsible for managing the projects from conceptual design to final deliverable.
+								</p>
+								<p>
+									The course will be run similar to how a business might be conducted. You will be accountable for completing
+									all aspects of the applications assigned to you. I will act in the role of CIO and set clear deliverables
+									for all milestones and the final deliverable. On the group projects, there will be one Team Leader per team,
+									four analysts/programmers, and one Project Manager. Your role will be assigned prior to beginning your group
+									projects.
+								</p></td>
+							</tr>
+							<tr>
+								<td width="25%"><strong>Resources:</strong></td>
+								<td width="75%"></td>
+							</tr>
+							<tr>
+								<td width="25%"><strong>Requisite Courses:</strong></td>
+								<td width="75%">Prerequisites: MIS 3053 and MIS 4053 with grades of C or higher.</td>
+							</tr>
+							<tr>
+								<td width="25%"><strong>Instructor:</strong></td>
+								<td width="75%"><a href="http://mis.misutulsa.com/sources/faculty.html" target="_blank">Ryan Haight</a></td>
+							</tr>
+						</table>
+						<table width="100%">
+							<tr>
+								<th colspan=2>Books and Supplies</th>
+							</tr>
+						</table>
+						<table width="100%">
+							<tr>
+								<td width="25%"><strong>Book Title:</strong></td>
+								<td width="75%">No Book Required</td>
+							</tr>
+							<tr>
+								<td width="25%"><strong>Author:</strong></td>
+								<td width="75%"></td>
+							</tr>
+							<tr>
+								<td width="25%"><strong>Publisher:</strong></td>
+								<td width="75%"></td>
+							</tr>
+							<tr>
+								<td width="25%"><strong>Edition:</strong></td>
+								<td width="75%"></td>
+							</tr>
+							<tr>
+								<td width="25%"><strong>ISBN:</strong></td>
+								<td width="75%"></td>
+							</tr>
+							<tr>
+								<td width="25%"><strong>Publishers Suggested Retail
+								Price:</strong></td>
+								<td width="75%"></td>
+							</tr>
+							<tr>
+								<td width="25%"><strong>Required:</strong></td>
+								<td width="75%">Required</td>
+							</tr>
+							<tr>
+								<td width="25%"><strong>Comments:</strong></td>
+								<td width="75%"></td>
+							</tr>
+							<tr>
+								<td width="25%"><strong>Syllabus:</strong></td>
+								<td width="75%"><a href="http://mis.misutulsa.com/sources/courseInfo/syllabi/Haight/MIS4093Syllabus.pdf" target="_blank">Course Syllabus Sample</a></td>
+							</tr>
+						</table>
+						<br>
+						<br>
 					</div>
-				</nav>
-			</div>
-		</div>
-		
-		
-		<header class="site-header" id="masthead">
-			<div class="container">
-				<div class="site-branding">
-					<h1 class="site-title"><a href="http://mis.misutulsa.com/" rel="home"> <img src="https://utulsa-assets.s3.amazonaws.com/web/static/v2/assets/tulsa-logo-v2.png" alt="Tulsa logo 14349f539cc3438e46002f0613ccda844a7f426169cb5328eaefd64084e78a0d"></a></h1>
 				</div>
-				<a class="menu-toggle visible-xs visible-sm"><span></span></a>
-				<a class="search-toggle visible-xs visible-sm">
-				<svg class="icon icon-search">
-					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-icon-search"></use>
-				</svg> </a>
-				<nav class="main-navigation collapse navbar-collapse navbar-ex1-collapse" id="site-navigation">
-					<div class="menu-primary-container">
-						<ul class="nav navbar-nav" id="menu-primary">
-							
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-2467" id="menu-item-2467">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="http://mis.misutulsa.com/sources/about.html">MIS Programs</a>
-								
-							
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1679" id="menu-item-1679">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="http://mis.misutulsa.com/sources/courses.html">MIS Courses</a>
-
-								<div class="dropdown">
-							<div class="container">
-								<div class="row">
-									<div class="dropdown-menu" style="margin-left: 2em">
-										<div class="col-md-3 8">
-											<ul>
-												Business Core Requirements
-												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-													<a href="http://mis.misutulsa.com/sources/courseInfo/mis1001.html">MIS 1001: Intro to Spreadsheets</a>
-												</li>
-												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-													<a href="http://mis.misutulsa.com/sources/courseInfo/mis2003.html">MIS 2003: Intro to Management Information Systems</a>
-												</li>
-												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-													<a href="http://mis.misutulsa.com/sources/courseInfo/mis3001.html">MIS 3001: Advanced Spreadsheet Application</a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-md-3 1">
-											<ul>
-												
-												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-													<a href="http://mis.misutulsa.com/sources/courseInfo/mis2013.html">MIS 2013: Business Programming Concepts I</a>
-												</li>
-												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-													<a href="http://mis.misutulsa.com/sources/courseInfo/mis3023.html">MIS 3023: Business Programming Concepts II</a>
-												</li>
-												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-													<a href="http://mis.misutulsa.com/sources/courseInfo/mis4033.html">MIS 4033: Business Programming Concepts III</a>
-												</li>
-											</ul>
-										</div>
-
-										<div class="col-md-3 1">
-											<ul>
-												
-												
-												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-													<a href="http://mis.misutulsa.com/sources/courseInfo/mis3043.html">MIS 3043: Telecommunications</a>
-												</li>
-												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-													<a href="http://mis.misutulsa.com/sources/courseInfo/mis3053.html">MIS 3053: Database Design & Application</a>
-												</li>
-												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-													<a href="http://mis.misutulsa.com/sources/courseInfo/mis4053.html">MIS 4053: Systems Analysis & Design</a>
-												</li>
-												
-											</ul>
-										</div>
-
-										<div class="col-md-3 8">
-											<ul>
-												
-												
-												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-													<a href="http://mis.misutulsa.com/sources/courseInfo/mis4073.html">MIS 4073: Information Security</a>
-												</li>
-												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-													<a href="http://mis.misutulsa.com/sources/courseInfo/mis4093.html">MIS 4093: Systems Development Project</a>
-												</li>
-												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-													<a href="http://mis.misutulsa.com/sources/courseInfo/mis4133.html">MIS 4133: Software Systems</a>
-												</li>
-											</ul>
-										</div>
-
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-2511" id="menu-item-2511">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="http://mis.misutulsa.com/sources/faculty.html">Faculty</a>
-
-								<div class="dropdown">
-									<div class="container">
-										<div class="row">
-											<div class="dropdown-menu" style="margin-left: 2em">
-												<div class="col-md-3 1">
-													<ul>
-														<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3213" id="menu-item-3213">
-															<a href="http://mis.misutulsa.com/sources/faculty.html">Sal Aurigemma</a>
-														</li>
-													</ul>
-												</div>
-
-												<div class="col-md-3 4">
-													<ul>
-														<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3213" id="menu-item-3213">
-															<a href="http://mis.misutulsa.com/sources/faculty.html">Akhilesh Bajaj</a>
-														</li>
-													</ul>
-												</div>
-
-												<div class="col-md-3 8">
-													<ul>
-														<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3213" id="menu-item-3213">
-															<a href="http://mis.misutulsa.com/sources/faculty.html">Ryan Haight</a>
-														</li>
-													</ul>
-												</div>
-
-												<div class="col-md-3 12">
-													<ul>
-														<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3213" id="menu-item-3213">
-															<a href="http://mis.misutulsa.com/sources/faculty.html">Lori Leonard</a>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-2467" id="menu-item-2467">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="http://mis.misutulsa.com/sources/resources.html">Class Resources</a>
-								
-								
-								
-
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-2456" id="menu-item-2456">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="http://mis.misutulsa.com/sources/itu.html">iTU</a>
-
-								
-
-							
-							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-2467" id="menu-item-2467">
-								<a class="dropdown-toggle" data-toggle="dropdown" href="http://mis.misutulsa.com/sources/career.html">Career Opportunities</a>
-							</li>
-						</ul>
-					</div>
-				</nav>
 			</div>
-		</header>
+		</div>
 
+		<!-- #footer will be replaced with footer.html content-->
+		<div id="footer"></div>
 
-<div id="page">
-    <div class="container">
-        <div class="row">
-            <div id="primary" class="page-full col-md-10 col-md-offset-1 ">
-                <a id="breadcrumbs">
-                    <span><a class="home" href="http://mis.misutulsa.com/index.html" title="Home">Home</a></span> / <span><a href="http://mis.misutulsa.com/sources/courses.html" title="Courses">Courses</span></a> / MIS-4093
-
-                <h1>Management Information Systems&nbsp;-&nbsp;MIS-4093</h1>
-
-                <br>
-                <table width="100%">
-                    <tr>
-                        <td width="25%"><strong>Course Number:</strong></td>
-                        <td width="75%">MIS-4093</td>
-                    </tr>
-                    <tr>
-                        <td width="25%"><strong>Title:</strong></td>
-                        <td width="75%">Systems Development Project</td>
-                    </tr>
-                    
-                    <tr>
-                        <td width="25%"><strong>Block:</strong></td>
-                        <td width="75%">MIS Major</td>
-                    </tr>
-                    <tr>
-                        <td width="25%"><strong>Course Description:</strong></td>
-                        <td width="75%">
-                        	<p>
-                        		The course is primarily intended to be a capstone experience for the undergraduate degree in 
-                        		Management Information Systems in which the student employs skills learned in all other MIS coursework. 
-                        		You will be required to deliver a project for this course that will encompass systems analysis and design, 
-                        		database management systems, data communications and programming languages.
-                        	</p>
-							
-							<p>
-								This class will give each student a real-world experience with systems allowing teams to work with real 
-								customers in designing, developing, and implementing an application/system to meet a true business need. 
-								Students will be responsible for managing the projects from conceptual design to final deliverable.
-							</p>
-							
-							<p>
-								The course will be run similar to how a business might be conducted. You will be accountable for completing 
-								all aspects of the applications assigned to you. I will act in the role of CIO and set clear deliverables 
-								for all milestones and the final deliverable. On the group projects, there will be one Team Leader per team, 
-								four analysts/programmers, and one Project Manager. Your role will be assigned prior to beginning your group 
-								projects.
-							</p>
-							</td>
-                    </tr>
-                    <tr>
-                        <td width="25%"><strong>Resources:</strong></td>
-                        <td width="75%"></td>
-                    </tr>
-                    <tr>
-                        <td width="25%"><strong>Requisite Courses:</strong></td>
-                        <td width="75%">Prerequisites: MIS 3053 and MIS 4053 with grades of C or higher.</td>
-                    </tr>
-                    <tr>
-                        <td width="25%"><strong>Instructor:</strong></td>
-                        <td width="75%"><a href="http://mis.misutulsa.com/sources/faculty.html" target="_blank">Ryan Haight</a></td>
-                    </tr>
-                </table>
-                <table width="100%">
-                    <tr>
-                        <th colspan=2>Books and Supplies</th>
-                    </tr>
-                </table>
-                <table width="100%">
-                    <tr>
-                        <td width="25%"><strong>Book Title:</strong></td>
-                        <td width="75%">No Book Required</td>
-                    </tr>
-                    <tr>
-                        <td width="25%"><strong>Author:</strong></td>
-                        <td width="75%"></td>
-                    </tr>
-                    <tr>
-                        <td width="25%"><strong>Publisher:</strong></td>
-                        <td width="75%"></td>
-                    </tr>
-                    <tr>
-                        <td width="25%"><strong>Edition:</strong></td>
-                        <td width="75%"></td>
-                    </tr>
-                    <tr>
-                        <td width="25%"><strong>ISBN:</strong></td>
-                        <td width="75%"></td>
-                    </tr>
-                    <tr>
-                        <td width="25%"><strong>Publishers Suggested Retail
-                            Price:</strong></td>
-                        <td width="75%"></td>
-                    </tr>
-                    <tr>
-                        <td width="25%"><strong>Required:</strong></td>
-                        <td width="75%">Required</td>
-                    </tr>
-                    <tr>
-                        <td width="25%"><strong>Comments:</strong></td>
-                        <td width="75%"></td>
-                    </tr>
-                    <tr>
-                        <td width="25%"><strong>Syllabus:</strong></td>
-                        <td width="75%"> <a href="http://mis.misutulsa.com/sources/courseInfo/syllabi/Haight/MIS4093Syllabus.pdf" target="_blank">Course Syllabus Sample</a> </td>
-                    </tr>
-                </table>
-                <br><br>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="footer-widgets">
-                <aside id="nav_menu-2" class="col-sm-4 col-md-3 widget widget_nav_menu"><h6 class="widget-title">Academics</h6><div class="menu-footer-academics-container"><ul id="menu-footer-academics" class="menu"><li id="menu-item-1442" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1442"><a href="http://artsandsciences.utulsa.edu/">Kendall College of Arts &amp; Sciences</a></li>
-                    <li id="menu-item-1443" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1443"><a href="http://business.utulsa.edu/">Collins College of Business</a></li>
-                    <li id="menu-item-1444" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1444"><a href="http://engineering.utulsa.edu/">College of Engineering &amp; Natural Sciences</a></li>
-                    <li id="menu-item-3428" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3428"><a href="http://healthsciences.utulsa.edu/">College of Health Sciences</a></li>
-                    <li id="menu-item-1446" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1446"><a href="http://law.utulsa.edu/">College of Law</a></li>
-                    <li id="menu-item-3427" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3427"><a href="http://graduate.utulsa.edu/">Graduate School</a></li>
-                    <li id="menu-item-3682" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3682"><a href="http://utulsa.edu/academics/continuing-education/">Continuing Education</a></li>
-                    <li id="menu-item-4888" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4888"><a href="http://utulsa.edu/departments-schools/">Departments &amp; Schools</a></li>
-                </ul></div></aside><aside id="nav_menu-3" class="col-sm-4 col-md-3 widget widget_nav_menu"><h6 class="widget-title">Offices &amp; Services</h6><div class="menu-offices-services-container"><ul id="menu-offices-services" class="menu"><li id="menu-item-1436" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1436"><a href="http://admission.utulsa.edu/">Admission and Financial Aid</a></li>
-                <li id="menu-item-3685" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3685"><a href="http://utulsa.edu/campus-life/alexander-health-center/">Alexander Health Center</a></li>
-                <li id="menu-item-3686" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3686"><a href="http://utulsa.edu/offices/bursar/">Office of the Bursar</a></li>
-                <li id="menu-item-3687" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3687"><a href="http://utulsa.edu/campus-life/campus-recreation/collins-fitness-center/">Collins Fitness Center</a></li>
-                <li id="menu-item-3688" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3688"><a href="http://admission.utulsa.edu/financial-aid/">Financial Aid</a></li>
-                <li id="menu-item-3689" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3689"><a href="http://utulsa.edu/mcfarlin-library/">McFarlin Library</a></li>
-                <li id="menu-item-3690" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3690"><a href="http://utulsa.edu/offices/registrar/">Office of the Registrar</a></li>
-                <li id="menu-item-3871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3871"><a href="http://utulsa.edu/offices/">Offices &amp; Services</a></li>
-            </ul></div></aside><aside id="nav_menu-4" class="col-sm-4 col-md-2 widget widget_nav_menu"><h6 class="widget-title">Explore</h6><div class="menu-explore-container"><ul id="menu-explore" class="menu"><li id="menu-item-3691" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3691"><a href="http://utulsa.edu/a-z/">A-Z Index</a></li>
-                <li id="menu-item-3712" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3712"><a href="http://utulsa.edu/arts-at-tu/">Arts @ TU</a></li>
-                <li id="menu-item-1426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1426"><a href="http://resources.utulsa.edu/schedule">Courses</a></li>
-                <li id="menu-item-5522" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5522"><a href="http://utulsa.edu/degrees/">Degrees</a></li>
-                <li id="menu-item-3693" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3693"><a href="http://utulsa.edu/about/working-at-tu/">Employment</a></li>
-                <li id="menu-item-3694" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3694"><a href="http://utulsa.edu/faculty-staff/">Faculty Directory</a></li>
-                <li id="menu-item-3695" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3695"><a href="http://utulsa.edu/maps/">Maps</a></li>
-                <li id="menu-item-3696" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3696"><a target="_blank" href="http://tulsa.university-tour.com/">Virtual Tour</a></li>
-            </ul></div></aside><div class="clearfix visible-sm" style="margin: 60px 0;"></div><aside id="nav_menu-5" class="col-sm-4 col-md-2 widget widget_nav_menu"><h6 class="widget-title">Resources</h6><div class="menu-footer-resources-container"><ul id="menu-footer-resources" class="menu"><li id="menu-item-4865" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4865"><a href="http://utulsa.edu/academic-calendar/">Academic Calendar</a></li>
-                <li id="menu-item-3699" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3699"><a href="http://utulsa.edu/offices/campus-security/">Campus Security</a></li>
-                <li id="menu-item-5527" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5527"><a href="/contact/">Contact</a></li>
-                <li id="menu-item-3697" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3697"><a target="_blank" href="https://calendar.utulsa.edu">Events Calendar</a></li>
-                <li id="menu-item-3698" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3698"><a href="http://utulsa.edu/offices/information-technology/">Information Technology</a></li>
-                <li id="menu-item-3702" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3702"><a href="https://portal.utulsa.edu">TU Portal</a></li>
-                <li id="menu-item-6012" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6012"><a href="http://utulsa.edu/offices/university-relations/digital-communications/web-site-issue-report/">Web Site Issue Report</a></li>
-            </ul></div></aside><aside id="socials_widget-3" class="col-sm-4 col-md-2 widget socials-widget"><h6 class="widget-title">Connect With TU</h6>
-                <div class="widget-wrap">
-                    <a class="icon-facebook" href="https://www.facebook.com/utulsa.edu" title="facebook" target="_blank">
-                        <svg class="icon icon-facebook"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use></svg>
-                    </a>
-                    <a class="icon-twitter" href="https://twitter.com/utulsa" title="twitter" target="_blank">
-                        <svg class="icon icon-twitter"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg>
-                    </a>
-                    <a class="icon-instagram" href="http://instagram.com/utulsa" title="instagram" target="_blank">
-                        <svg class="icon icon-instagram"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram"></use></svg>
-                    </a>
-                    <div class="content-wrap">
-                        <a href="/social-media-directory/">Social Media Directory</a>
-                        <!-- <a href="#">Social Media Policy</a> --></div>
-                </div>
-            </aside></div>
-        </div>
-    </div>
-    <div class="site-info">
-        <div class="container">
-            &copy; 2015 The University of Tulsa. All Rights Reserved.</div>
-    </div>
-
-</body>
+	</body>
 </html>

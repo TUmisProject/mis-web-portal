@@ -13,12 +13,12 @@
 		<link rel="stylesheet" media="screen" href="https://utulsa-assets.s3.amazonaws.com/web/static/v2/assets/application-v2.css" />
 		<link rel='stylesheet' property='stylesheet' href='https://fast.fonts.net/cssapi/7b215a58-dada-4401-9ad4-84f2e38cead9.css' type='text/css' media='all' />
 		
-		<!--Scripts to import header-->
+		<!--Scripts to import header and footer-->
 		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 		<script>
 			$(function() {
-				$("#header").load("header.html");
-				$("#footer").load("footer.html");
+				$("#header").load("../header.html");
+				$("#footer").load("../footer.html");
 			});
 		</script>
 	</head>
@@ -61,6 +61,7 @@
 			</defs>
 		</svg>
 
+		<!-- #header will be replaced with header.html content -->
 		<div id="header"></div>
 
 		<div class="container">
@@ -251,7 +252,7 @@
 			</div>
 		</div>
 
-		<!-- #footer will be replaced with /partials/footer.html content via ajax -->
+		<!-- #footer will be replaced with footer.html content-->
 		<div id="footer"></div>
 
 
