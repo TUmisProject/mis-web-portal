@@ -1,315 +1,272 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="shortcut icon" type="image/x-icon" href="https://utulsa-assets.s3.amazonaws.com/web/static/v2/assets/favicon.png" />
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="https://utulsa-assets.s3.amazonaws.com/web/static/v2/assets/favicon.png" />
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
 
-    <title>The University of Tulsa MIS Web Portal</title>
+		<title>The University of Tulsa MIS Web Portal</title>
 
-    <script src="https://utulsa-assets.s3.amazonaws.com/web/static/v2/assets/application-v2.js" async></script>
-    <link rel="stylesheet" media="screen" href="https://utulsa-assets.s3.amazonaws.com/web/static/v2/assets/application-v2.css" />
-    <link rel='stylesheet' property='stylesheet' href='https://fast.fonts.net/cssapi/7b215a58-dada-4401-9ad4-84f2e38cead9.css' type='text/css' media='all' />
-</head>
+		<script src="https://utulsa-assets.s3.amazonaws.com/web/static/v2/assets/application-v2.js" async></script>
+		<link rel="stylesheet" media="screen" href="https://utulsa-assets.s3.amazonaws.com/web/static/v2/assets/application-v2.css" />
+		<link rel='stylesheet' property='stylesheet' href='https://fast.fonts.net/cssapi/7b215a58-dada-4401-9ad4-84f2e38cead9.css' type='text/css' media='all' />
+	</head>
 
+	
+	<body>
+		<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<defs>
+				<symbol id="icon-icon-search" viewBox="0 0 1024 1024">
+					<path class="path1" d="M1024 928l-268.8-268.8c44.8-70.4 76.8-153.6 76.8-243.2 0-230.4-185.6-416-416-416s-416 185.6-416 416 185.6 416 416 416c89.6 0 172.8-32 243.2-76.8l268.8 268.8 96-96zM128 416c0-160 128-288 288-288s288 128 288 288-128 288-288 288c-160 0-288-128-288-288z"></path>
+				</symbol>
+				<symbol id="icon-user_icon" viewBox="0 0 948 1024">
+					<path class="path1" d="M596.364 597.818v-34.909c82.909-45.091 135.273-130.909 135.273-225.455 0-141.091-114.909-257.455-257.455-257.455-141.091 0-256 114.909-256 256 0 94.545 52.364 181.818 135.273 225.455v34.909c-200.727 21.818-353.455 187.636-353.455 392.727v34.909h948.364v-34.909c0-205.091-152.727-370.909-352-391.273z"></path>
+				</symbol>
+				<symbol id="icon-icon-calendar" viewBox="0 0 910 1024">
+					<path class="path1" d="M0 0v1024h910.222v-1024h-910.222zM739.556 113.778c34.133 0 56.889 22.756 56.889 56.889s-22.756 56.889-56.889 56.889-56.889-22.756-56.889-56.889c0-34.133 22.756-56.889 56.889-56.889zM170.667 113.778c34.133 0 56.889 22.756 56.889 56.889s-22.756 56.889-56.889 56.889-56.889-22.756-56.889-56.889c0-34.133 22.756-56.889 56.889-56.889zM853.333 967.111h-796.444v-625.778h796.444v625.778z"></path>
+				</symbol>
+				<symbol id="icon-icon-rss" viewBox="0 0 1021 1024">
+					<path class="path1" d="M163.44 935.609c0 46.975-36.587 85.055-81.72 85.055s-81.72-38.081-81.72-85.055c0-46.975 36.587-85.055 81.72-85.055s81.72 38.081 81.72 85.055z"></path>
+					<path class="path2" d="M40.86 541.019c-13.676 0-27.184 0-40.86 3.336v78.218c13.676 0 27.184-3.336 40.86-3.336 200.797 0 364.070 163.273 364.070 367.406 0 13.676 0 23.849-3.336 37.358h78.218c0-13.676 3.336-23.849 3.336-37.358 0-248.328-197.295-445.623-442.288-445.623z"></path>
+					<path class="path3" d="M40.86 268.842c-13.676 0-27.184 3.336-40.86 3.336v78.218c13.676 0 27.184-3.336 40.86-3.336 350.395 0 632.745 285.853 632.745 636.248 0 13.676 0 23.849-3.336 37.358h78.218c0-13.676 3.336-23.849 3.336-37.358 0-391.255-319.708-714.465-710.963-714.465z"></path>
+					<path class="path4" d="M40.86 78.218c496.657 0 901.587 408.266 901.587 908.425 0 13.676 0 23.849 0 37.358h78.218c0-13.676 0-23.849 0-37.358 0-544.354-438.952-986.642-979.805-986.642-13.676 0-27.184 0-40.86 0v78.218c13.676 0 27.184 0 40.86 0z"></path>
+				</symbol>
+				<symbol id="icon-cross" viewBox="0 0 1024 1024">
+					<path class="path1" d="M734.669 673.382l-141.21-161.382 141.21-161.382c24.013-24.013 24.013-62.925 0-86.886-24.013-23.962-62.925-23.962-86.886 0l-135.782 155.187-135.731-155.136c-24.013-24.013-62.925-24.013-86.886 0-23.962 24.013-23.962 62.925 0 86.886l141.158 161.331-141.21 161.382c-23.962 24.013-23.962 62.822 0 86.784 24.013 24.013 62.925 24.013 86.886 0l135.782-155.085 135.731 155.085c24.013 24.013 62.925 24.013 86.886 0s24.013-62.771 0.051-86.784z"></path>
+				</symbol>
+				<symbol id="icon-instagram" viewBox="0 0 1024 1024">
+					<path class="path1" d="M905.846 433.231h-90.585c7.877 23.631 11.815 51.2 11.815 78.769 0 173.292-141.785 315.077-315.077 315.077s-315.077-141.785-315.077-315.077c0-27.569 3.938-55.138 11.815-78.769h-90.585v433.231c0 23.631 15.754 39.385 39.385 39.385h708.923c23.631 0 39.385-15.754 39.385-39.385v-433.231zM905.846 157.538c0-23.631-15.754-39.385-39.385-39.385h-118.154c-23.631 0-39.385 15.754-39.385 39.385v118.154c0 23.631 15.754 39.385 39.385 39.385h118.154c23.631 0 39.385-15.754 39.385-39.385v-118.154zM512 315.077c-110.277 0-196.923 86.646-196.923 196.923s86.646 196.923 196.923 196.923c110.277 0 196.923-86.646 196.923-196.923s-86.646-196.923-196.923-196.923zM905.846 1024h-787.692c-66.954 0-118.154-51.2-118.154-118.154v-787.692c0-66.954 51.2-118.154 118.154-118.154h787.692c66.954 0 118.154 51.2 118.154 118.154v787.692c0 66.954-51.2 118.154-118.154 118.154z"></path>
+				</symbol>
+				<symbol id="icon-facebook" viewBox="0 0 1024 1024">
+					<path class="path1" d="M968.862 0h-913.723c-31.508 0-55.138 23.631-55.138 55.138v909.785c0 35.446 23.631 59.077 55.138 59.077h492.308v-397.785h-133.908v-153.6h133.908v-114.215c0-133.908 82.708-204.8 196.923-204.8 55.138 0 106.338 3.938 118.154 7.877v137.846h-82.708c-63.015 0-74.831 31.508-74.831 74.831v98.462h153.6l-19.692 153.6h-133.908v397.785h259.938c31.508 0 55.138-23.631 55.138-55.138v-913.723c3.938-31.508-19.692-55.138-51.2-55.138z"></path>
+				</symbol>
+				<symbol id="icon-twitter" viewBox="0 0 1024 1024">
+					<path class="path1" d="M1024 194.418c-37.676 16.708-78.164 28.002-120.66 33.080 43.372-26 76.686-67.17 92.372-116.23-40.596 24.078-85.556 41.56-133.41 50.98-38.32-40.83-92.922-66.34-153.346-66.34-116.022 0-210.088 94.058-210.088 210.078 0 16.466 1.858 32.5 5.44 47.878-174.6-8.764-329.402-92.4-433.018-219.506-18.084 31.028-28.446 67.116-28.446 105.618 0 72.888 37.088 137.192 93.46 174.866-34.438-1.092-66.832-10.542-95.154-26.278-0.020 0.876-0.020 1.756-0.020 2.642 0 101.788 72.418 186.696 168.522 206-17.626 4.8-36.188 7.372-55.348 7.372-13.538 0-26.698-1.32-39.528-3.772 26.736 83.46 104.32 144.206 196.252 145.896-71.9 56.35-162.486 89.934-260.916 89.934-16.958 0-33.68-0.994-50.116-2.94 92.972 59.61 203.402 94.394 322.042 94.394 386.422 0 597.736-320.124 597.736-597.744 0-9.108-0.206-18.168-0.61-27.18 41.056-29.62 76.672-66.62 104.836-108.748z"></path>
+				</symbol>
+				<symbol id="icon-google-plus" viewBox="0 0 1024 1024">
+					<title>google-plus</title>
+					<path class="path1" d="M0.806 869.664c-0.244-2.532-0.452-5.070-0.584-7.63 0.13 2.56 0.34 5.098 0.584 7.63zM235.908 565.148c92.010 2.738 153.734-92.698 137.862-213.198-15.894-120.48-103.396-217.168-195.408-219.922-92.026-2.73-153.74 89.482-137.852 210 15.882 120.468 103.352 220.374 195.398 223.12zM1024 256v-85.31c0-93.88-76.782-170.69-170.658-170.69h-682.656c-92.276 0-168.012 74.232-170.564 165.926 58.362-51.386 139.324-94.316 222.874-94.316 89.304 0 357.244 0 357.244 0l-79.948 67.618h-113.268c75.13 28.804 115.156 116.124 115.156 205.722 0 75.248-41.81 139.954-100.888 185.968-57.644 44.902-68.572 63.708-68.572 101.878 0 32.578 61.746 88 94.032 110.788 94.382 66.538 124.916 128.312 124.916 231.456 0 16.428-2.042 32.83-6.066 48.96h307.742c93.874 0 170.656-76.75 170.656-170.69v-533.308h-192v191.998h-64v-192h-191.998v-64h191.998v-192h64v192h192zM185.886 765.936c21.614 0 41.422-0.59 61.936-0.59-27.146-26.334-48.626-58.6-48.626-98.38 0-23.608 7.564-46.336 18.134-66.52-10.782 0.77-21.79 0.994-33.126 0.994-74.356 0-137.506-24.076-184.204-63.854v67.242l0.006 201.73c53.44-25.374 116.888-40.622 185.88-40.622zM3.42 887.258c-1.112-5.458-1.966-11.006-2.542-16.634 0.574 5.628 1.43 11.176 2.542 16.634zM455.45 952.846c-15.058-58.806-68.454-87.964-142.888-139.568-27.072-8.732-56.894-13.874-88.894-14.208-89.618-0.964-173.108 34.942-220.216 88.372 15.92 77.706 85.034 136.558 167.234 136.558h286.444c1.816-11.128 2.696-22.632 2.696-34.432 0-12.534-1.534-24.792-4.376-36.722z"></path>
+				</symbol>
+			</defs>
+		</svg>
 
-<body>
-<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <defs>
-        <symbol id="icon-icon-search" viewBox="0 0 1024 1024">
-            <path class="path1" d="M1024 928l-268.8-268.8c44.8-70.4 76.8-153.6 76.8-243.2 0-230.4-185.6-416-416-416s-416 185.6-416 416 185.6 416 416 416c89.6 0 172.8-32 243.2-76.8l268.8 268.8 96-96zM128 416c0-160 128-288 288-288s288 128 288 288-128 288-288 288c-160 0-288-128-288-288z"></path>
-        </symbol>
-        <symbol id="icon-user_icon" viewBox="0 0 948 1024">
-            <path class="path1" d="M596.364 597.818v-34.909c82.909-45.091 135.273-130.909 135.273-225.455 0-141.091-114.909-257.455-257.455-257.455-141.091 0-256 114.909-256 256 0 94.545 52.364 181.818 135.273 225.455v34.909c-200.727 21.818-353.455 187.636-353.455 392.727v34.909h948.364v-34.909c0-205.091-152.727-370.909-352-391.273z"></path>
-        </symbol>
-        <symbol id="icon-icon-calendar" viewBox="0 0 910 1024">
-            <path class="path1" d="M0 0v1024h910.222v-1024h-910.222zM739.556 113.778c34.133 0 56.889 22.756 56.889 56.889s-22.756 56.889-56.889 56.889-56.889-22.756-56.889-56.889c0-34.133 22.756-56.889 56.889-56.889zM170.667 113.778c34.133 0 56.889 22.756 56.889 56.889s-22.756 56.889-56.889 56.889-56.889-22.756-56.889-56.889c0-34.133 22.756-56.889 56.889-56.889zM853.333 967.111h-796.444v-625.778h796.444v625.778z"></path>
-        </symbol>
-        <symbol id="icon-icon-rss" viewBox="0 0 1021 1024">
-            <path class="path1" d="M163.44 935.609c0 46.975-36.587 85.055-81.72 85.055s-81.72-38.081-81.72-85.055c0-46.975 36.587-85.055 81.72-85.055s81.72 38.081 81.72 85.055z"></path>
-            <path class="path2" d="M40.86 541.019c-13.676 0-27.184 0-40.86 3.336v78.218c13.676 0 27.184-3.336 40.86-3.336 200.797 0 364.070 163.273 364.070 367.406 0 13.676 0 23.849-3.336 37.358h78.218c0-13.676 3.336-23.849 3.336-37.358 0-248.328-197.295-445.623-442.288-445.623z"></path>
-            <path class="path3" d="M40.86 268.842c-13.676 0-27.184 3.336-40.86 3.336v78.218c13.676 0 27.184-3.336 40.86-3.336 350.395 0 632.745 285.853 632.745 636.248 0 13.676 0 23.849-3.336 37.358h78.218c0-13.676 3.336-23.849 3.336-37.358 0-391.255-319.708-714.465-710.963-714.465z"></path>
-            <path class="path4" d="M40.86 78.218c496.657 0 901.587 408.266 901.587 908.425 0 13.676 0 23.849 0 37.358h78.218c0-13.676 0-23.849 0-37.358 0-544.354-438.952-986.642-979.805-986.642-13.676 0-27.184 0-40.86 0v78.218c13.676 0 27.184 0 40.86 0z"></path>
-        </symbol>
-        <symbol id="icon-cross" viewBox="0 0 1024 1024">
-            <path class="path1" d="M734.669 673.382l-141.21-161.382 141.21-161.382c24.013-24.013 24.013-62.925 0-86.886-24.013-23.962-62.925-23.962-86.886 0l-135.782 155.187-135.731-155.136c-24.013-24.013-62.925-24.013-86.886 0-23.962 24.013-23.962 62.925 0 86.886l141.158 161.331-141.21 161.382c-23.962 24.013-23.962 62.822 0 86.784 24.013 24.013 62.925 24.013 86.886 0l135.782-155.085 135.731 155.085c24.013 24.013 62.925 24.013 86.886 0s24.013-62.771 0.051-86.784z"></path>
-        </symbol>
-        <symbol id="icon-instagram" viewBox="0 0 1024 1024">
-            <path class="path1" d="M905.846 433.231h-90.585c7.877 23.631 11.815 51.2 11.815 78.769 0 173.292-141.785 315.077-315.077 315.077s-315.077-141.785-315.077-315.077c0-27.569 3.938-55.138 11.815-78.769h-90.585v433.231c0 23.631 15.754 39.385 39.385 39.385h708.923c23.631 0 39.385-15.754 39.385-39.385v-433.231zM905.846 157.538c0-23.631-15.754-39.385-39.385-39.385h-118.154c-23.631 0-39.385 15.754-39.385 39.385v118.154c0 23.631 15.754 39.385 39.385 39.385h118.154c23.631 0 39.385-15.754 39.385-39.385v-118.154zM512 315.077c-110.277 0-196.923 86.646-196.923 196.923s86.646 196.923 196.923 196.923c110.277 0 196.923-86.646 196.923-196.923s-86.646-196.923-196.923-196.923zM905.846 1024h-787.692c-66.954 0-118.154-51.2-118.154-118.154v-787.692c0-66.954 51.2-118.154 118.154-118.154h787.692c66.954 0 118.154 51.2 118.154 118.154v787.692c0 66.954-51.2 118.154-118.154 118.154z"></path>
-        </symbol>
-        <symbol id="icon-facebook" viewBox="0 0 1024 1024">
-            <path class="path1" d="M968.862 0h-913.723c-31.508 0-55.138 23.631-55.138 55.138v909.785c0 35.446 23.631 59.077 55.138 59.077h492.308v-397.785h-133.908v-153.6h133.908v-114.215c0-133.908 82.708-204.8 196.923-204.8 55.138 0 106.338 3.938 118.154 7.877v137.846h-82.708c-63.015 0-74.831 31.508-74.831 74.831v98.462h153.6l-19.692 153.6h-133.908v397.785h259.938c31.508 0 55.138-23.631 55.138-55.138v-913.723c3.938-31.508-19.692-55.138-51.2-55.138z"></path>
-        </symbol>
-        <symbol id="icon-twitter" viewBox="0 0 1024 1024">
-            <path class="path1" d="M1024 194.418c-37.676 16.708-78.164 28.002-120.66 33.080 43.372-26 76.686-67.17 92.372-116.23-40.596 24.078-85.556 41.56-133.41 50.98-38.32-40.83-92.922-66.34-153.346-66.34-116.022 0-210.088 94.058-210.088 210.078 0 16.466 1.858 32.5 5.44 47.878-174.6-8.764-329.402-92.4-433.018-219.506-18.084 31.028-28.446 67.116-28.446 105.618 0 72.888 37.088 137.192 93.46 174.866-34.438-1.092-66.832-10.542-95.154-26.278-0.020 0.876-0.020 1.756-0.020 2.642 0 101.788 72.418 186.696 168.522 206-17.626 4.8-36.188 7.372-55.348 7.372-13.538 0-26.698-1.32-39.528-3.772 26.736 83.46 104.32 144.206 196.252 145.896-71.9 56.35-162.486 89.934-260.916 89.934-16.958 0-33.68-0.994-50.116-2.94 92.972 59.61 203.402 94.394 322.042 94.394 386.422 0 597.736-320.124 597.736-597.744 0-9.108-0.206-18.168-0.61-27.18 41.056-29.62 76.672-66.62 104.836-108.748z"></path>
-        </symbol>
-        <symbol id="icon-google-plus" viewBox="0 0 1024 1024">
-            <title>google-plus</title>
-            <path class="path1" d="M0.806 869.664c-0.244-2.532-0.452-5.070-0.584-7.63 0.13 2.56 0.34 5.098 0.584 7.63zM235.908 565.148c92.010 2.738 153.734-92.698 137.862-213.198-15.894-120.48-103.396-217.168-195.408-219.922-92.026-2.73-153.74 89.482-137.852 210 15.882 120.468 103.352 220.374 195.398 223.12zM1024 256v-85.31c0-93.88-76.782-170.69-170.658-170.69h-682.656c-92.276 0-168.012 74.232-170.564 165.926 58.362-51.386 139.324-94.316 222.874-94.316 89.304 0 357.244 0 357.244 0l-79.948 67.618h-113.268c75.13 28.804 115.156 116.124 115.156 205.722 0 75.248-41.81 139.954-100.888 185.968-57.644 44.902-68.572 63.708-68.572 101.878 0 32.578 61.746 88 94.032 110.788 94.382 66.538 124.916 128.312 124.916 231.456 0 16.428-2.042 32.83-6.066 48.96h307.742c93.874 0 170.656-76.75 170.656-170.69v-533.308h-192v191.998h-64v-192h-191.998v-64h191.998v-192h64v192h192zM185.886 765.936c21.614 0 41.422-0.59 61.936-0.59-27.146-26.334-48.626-58.6-48.626-98.38 0-23.608 7.564-46.336 18.134-66.52-10.782 0.77-21.79 0.994-33.126 0.994-74.356 0-137.506-24.076-184.204-63.854v67.242l0.006 201.73c53.44-25.374 116.888-40.622 185.88-40.622zM3.42 887.258c-1.112-5.458-1.966-11.006-2.542-16.634 0.574 5.628 1.43 11.176 2.542 16.634zM455.45 952.846c-15.058-58.806-68.454-87.964-142.888-139.568-27.072-8.732-56.894-13.874-88.894-14.208-89.618-0.964-173.108 34.942-220.216 88.372 15.92 77.706 85.034 136.558 167.234 136.558h286.444c1.816-11.128 2.696-22.632 2.696-34.432 0-12.534-1.534-24.792-4.376-36.722z"></path>
-        </symbol>
-    </defs>
-</svg>
-
-<div class="header-search">
-    <div class="container">
-        <form action="https://search.utulsa.edu/" class="input-group searchform" method="get">
-            <input class="search-input form-control" name="s" placeholder="Search …" title="Search for:" type="search" value="">
+		<div class="header-search">
+			<div class="container">
+				<form action="https://search.utulsa.edu/" class="input-group searchform" method="get">
+					<input class="search-input form-control" name="s" placeholder="Search …" title="Search for:" type="search" value="">
 					<span class="input-group-btn">
 						<input class="btn btn-default" type="submit" value="Search">
 					</span>
-        </form>
-    </div>
-</div>
+				</form>
+			</div>
+		</div>
 
-<div class="secondary">
-    <div class="container">
-        <nav class="secondary-navigation">
-            <div class="menu-secondary-container">
-                <ul class="nav navbar-nav" id="menu-secondary">
-                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14" id="menu-item-14">
-                        <a href="http://admission.utulsa.edu/apply/" title="section" target="_blank">Apply</a>
-                    </li>
+		<div class="secondary">
+			<div class="container">
+				<nav class="secondary-navigation">
+					<div class="menu-secondary-container">
+						<ul class="nav navbar-nav" id="menu-secondary">
+							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14" id="menu-item-14">
+								<a href="http://admission.utulsa.edu/apply/" title="section" target="_blank">Apply</a>
+							</li>
 
-                    <li class="section menu-item menu-item-type-custom menu-item-object-custom menu-item-13" id="menu-item-13">
-                        <a href="http://utulsa.edu/offices-services/institutional-advancement/" target="_blank">Support TU</a>
-                    </li>
+							<li class="section menu-item menu-item-type-custom menu-item-object-custom menu-item-13" id="menu-item-13">
+								<a href="http://utulsa.edu/offices-services/institutional-advancement/" target="_blank">Support TU</a>
+							</li>
 
-                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15" id="menu-item-15">
-                        <a href="https://portal.utulsa.edu/" target="_blank">Login</a>
-                    </li>
+							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15" id="menu-item-15">
+								<a href="https://portal.utulsa.edu/" target="_blank">Login</a>
+							</li>
 
-                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6904" id="menu-item-6904">
-                        <a href="https://faculty.utulsa.edu" target="_blank">Faculty</a>
-                    </li>
+							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6904" id="menu-item-6904">
+								<a href="https://faculty.utulsa.edu" target="_blank">Faculty</a>
+							</li>
 
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1501" id="menu-item-1501">
-                        <a href="http://utulsa.edu/maps/" target="_blank">Maps</a>
-                    </li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1501" id="menu-item-1501">
+								<a href="http://utulsa.edu/maps/" target="_blank">Maps</a>
+							</li>
 
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1583" id="menu-item-1583">
-                        <a href="http://utulsa.edu/social-media-directory/" target="_blank">Social Media</a>
-                    </li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1583" id="menu-item-1583">
+								<a href="http://utulsa.edu/social-media-directory/" target="_blank">Social Media</a>
+							</li>
 
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3723" id="menu-item-3723">
-                        <a href="http://utulsa.edu/contact/" target="_blank">Contact</a>
-                    </li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3723" id="menu-item-3723">
+								<a href="http://utulsa.edu/contact/" target="_blank">Contact</a>
+							</li>
 
-                    <li>
-                        <a class="search-toggle">
-                            <svg class="icon icon-search">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-icon-search"></use>
-                            </svg> </a>
-                    </li>
+							<li>
+								<a class="search-toggle">
+								<svg class="icon icon-search">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-icon-search"></use>
+								</svg> </a>
+							</li>
 
-                </ul>
-            </div>
-        </nav>
-    </div>
-</div>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		
+		
+		<header class="site-header" id="masthead">
+			<div class="container">
+				<div class="site-branding">
+					<h1 class="site-title"><a href="http://mis.misutulsa.com/" rel="home"> <img src="https://utulsa-assets.s3.amazonaws.com/web/static/v2/assets/tulsa-logo-v2.png" alt="Tulsa logo 14349f539cc3438e46002f0613ccda844a7f426169cb5328eaefd64084e78a0d"></a></h1>
+				</div>
+				<a class="menu-toggle visible-xs visible-sm"><span></span></a>
+				<a class="search-toggle visible-xs visible-sm">
+				<svg class="icon icon-search">
+					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-icon-search"></use>
+				</svg> </a>
+				<nav class="main-navigation collapse navbar-collapse navbar-ex1-collapse" id="site-navigation">
+					<div class="menu-primary-container">
+						<ul class="nav navbar-nav" id="menu-primary">
+							
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-2467" id="menu-item-2467">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="http://mis.misutulsa.com/sources/about.html">MIS Programs</a>
+								
+							
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1679" id="menu-item-1679">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="http://mis.misutulsa.com/sources/courses.html">MIS Courses</a>
 
+								<div class="dropdown">
+							<div class="container">
+								<div class="row">
+									<div class="dropdown-menu" style="margin-left: 2em">
+										<div class="col-md-3 8">
+											<ul>
+												Business Core Requirements
+												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
+													<a href="http://mis.misutulsa.com/sources/courseInfo/mis1001.html">MIS 1001: Intro to Spreadsheets</a>
+												</li>
+												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
+													<a href="http://mis.misutulsa.com/sources/courseInfo/mis2003.html">MIS 2003: Intro to Management Information Systems</a>
+												</li>
+												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
+													<a href="http://mis.misutulsa.com/sources/courseInfo/mis3001.html">MIS 3001: Advanced Spreadsheet Application</a>
+												</li>
+											</ul>
+										</div>
+										<div class="col-md-3 1">
+											<ul>
+												
+												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
+													<a href="http://mis.misutulsa.com/sources/courseInfo/mis2013.html">MIS 2013: Business Programming Concepts I</a>
+												</li>
+												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
+													<a href="http://mis.misutulsa.com/sources/courseInfo/mis3023.html">MIS 3023: Business Programming Concepts II</a>
+												</li>
+												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
+													<a href="http://mis.misutulsa.com/sources/courseInfo/mis4033.html">MIS 4033: Business Programming Concepts III</a>
+												</li>
+											</ul>
+										</div>
 
-<header class="site-header" id="masthead">
-    <div class="container">
-        <div class="site-branding">
-            <h1 class="site-title"><a href="http://mis.misutulsa.com/" rel="home"> <img src="https://utulsa-assets.s3.amazonaws.com/web/static/v2/assets/tulsa-logo-v2.png" alt="Tulsa logo 14349f539cc3438e46002f0613ccda844a7f426169cb5328eaefd64084e78a0d"></a></h1>
-        </div>
+										<div class="col-md-3 1">
+											<ul>
+												
+												
+												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
+													<a href="http://mis.misutulsa.com/sources/courseInfo/mis3043.html">MIS 3043: Telecommunications</a>
+												</li>
+												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
+													<a href="http://mis.misutulsa.com/sources/courseInfo/mis3053.html">MIS 3053: Database Design & Application</a>
+												</li>
+												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
+													<a href="http://mis.misutulsa.com/sources/courseInfo/mis4053.html">MIS 4053: Systems Analysis & Design</a>
+												</li>
+												
+											</ul>
+										</div>
 
-        <a class="menu-toggle visible-xs visible-sm"><span></span></a>
-        <a class="search-toggle visible-xs visible-sm">
-            <svg class="icon icon-search">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-icon-search"></use>
-            </svg> </a>
-        <nav class="main-navigation collapse navbar-collapse navbar-ex1-collapse" id="site-navigation">
-            <div class="menu-primary-container">
-                <ul class="nav navbar-nav" id="menu-primary">
+										<div class="col-md-3 8">
+											<ul>
+												
+												
+												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
+													<a href="http://mis.misutulsa.com/sources/courseInfo/mis4073.html">MIS 4073: Information Security</a>
+												</li>
+												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
+													<a href="http://mis.misutulsa.com/sources/courseInfo/mis4093.html">MIS 4093: Systems Development Project</a>
+												</li>
+												<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
+													<a href="http://mis.misutulsa.com/sources/courseInfo/mis4133.html">MIS 4133: Software Systems</a>
+												</li>
+											</ul>
+										</div>
 
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1679" id="menu-item-1679">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="http://mis.misutulsa.com/sources/courses.html">MIS Courses</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
 
-                        <div class="dropdown">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="dropdown-menu" style="margin-left: 2em">
-                                        <div class="col-md-3 8">
-                                            <ul>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-2511" id="menu-item-2511">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="http://mis.misutulsa.com/sources/faculty.html">Faculty</a>
 
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-3 1">
-                                            <ul>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-                                                    <a href="http://mis.misutulsa.com/sources/courseInfo/mis1001.html">MIS 1001: Intro to Spreadsheets</a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-                                                    <a href="http://mis.misutulsa.com/sources/courseInfo/mis2003.html">MIS 2003: Intro to Management Information Systems</a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-                                                    <a href="http://mis.misutulsa.com/sources/courseInfo/mis2013.html">MIS 2013: Business Programming Concepts I</a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-                                                    <a href="http://mis.misutulsa.com/sources/courseInfo/mis3001.html">MIS 3001: Advanced Spreadsheet Application</a>
-                                                </li>
-                                            </ul>
-                                        </div>
+								<div class="dropdown">
+									<div class="container">
+										<div class="row">
+											<div class="dropdown-menu" style="margin-left: 2em">
+												<div class="col-md-3 1">
+													<ul>
+														<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3213" id="menu-item-3213">
+															<a href="http://mis.misutulsa.com/sources/faculty.html">Sal Aurigemma</a>
+														</li>
+													</ul>
+												</div>
 
-                                        <div class="col-md-3 1">
-                                            <ul>
+												<div class="col-md-3 4">
+													<ul>
+														<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3213" id="menu-item-3213">
+															<a href="http://mis.misutulsa.com/sources/faculty.html">Akhilesh Bajaj</a>
+														</li>
+													</ul>
+												</div>
 
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-                                                    <a href="http://mis.misutulsa.com/sources/courseInfo/mis3023.html">MIS 3023: Business Programming Concepts II</a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-                                                    <a href="http://mis.misutulsa.com/sources/courseInfo/mis3043.html">MIS 3043: Telecommunications</a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-                                                    <a href="http://mis.misutulsa.com/sources/courseInfo/mis3053.html">MIS 3053: Database Design & Application</a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-                                                    <a href="http://mis.misutulsa.com/sources/courseInfo/mis4033.html">MIS 4033: Business Programming Concepts III</a>
-                                                </li>
-                                            </ul>
-                                        </div>
+												<div class="col-md-3 8">
+													<ul>
+														<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3213" id="menu-item-3213">
+															<a href="http://mis.misutulsa.com/sources/faculty.html">Ryan Haight</a>
+														</li>
+													</ul>
+												</div>
 
-                                        <div class="col-md-3 8">
-                                            <ul>
+												<div class="col-md-3 12">
+													<ul>
+														<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3213" id="menu-item-3213">
+															<a href="http://mis.misutulsa.com/sources/faculty.html">Lori Leonard</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-2467" id="menu-item-2467">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="http://mis.misutulsa.com/sources/resources.html">Class Resources</a>
+								
+								
+								
 
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-                                                    <a href="http://mis.misutulsa.com/sources/courseInfo/mis4053.html">MIS 4053: Systems Analysis & Design</a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-                                                    <a href="http://mis.misutulsa.com/sources/courseInfo/mis4073.html">MIS 4073: Information Security</a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-                                                    <a href="http://mis.misutulsa.com/sources/courseInfo/mis4093.html">MIS 4093: Systems Development Project</a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1881" id="menu-item-1881">
-                                                    <a href="http://mis.misutulsa.com/sources/courseInfo/mis4133.html">MIS 4133: Software Systems</a>
-                                                </li>
-                                            </ul>
-                                        </div>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-2456" id="menu-item-2456">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="http://mis.misutulsa.com/sources/itu.html">iTU</a>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+								
 
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-2511" id="menu-item-2511">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="http://mis.misutulsa.com/sources/faculty.html">Faculty</a>
-
-                        <div class="dropdown">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="dropdown-menu" style="margin-left: 2em">
-                                        <div class="col-md-3 1">
-                                            <ul>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3213" id="menu-item-3213">
-                                                    <a href="http://mis.misutulsa.com/sources/faculty.html">Sal Aurigemma</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="col-md-3 4">
-                                            <ul>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3213" id="menu-item-3213">
-                                                    <a href="http://mis.misutulsa.com/sources/faculty.html">Akhilesh Bajaj</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="col-md-3 8">
-                                            <ul>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3213" id="menu-item-3213">
-                                                    <a href="http://mis.misutulsa.com/sources/faculty.html">Ryan Haight</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="col-md-3 12">
-                                            <ul>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3213" id="menu-item-3213">
-                                                    <a href="http://mis.misutulsa.com/sources/faculty.html">Lori Leonard</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-2467" id="menu-item-2467">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="http://mis.misutulsa.com/sources/resources.html">Class Resources</a>
-
-                        <div class="dropdown">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="dropdown-menu" style="margin-left: 2em">
-                                        <div class="col-md-3 8">
-                                            <ul>
-
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-3 1">
-                                            <ul>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3213" id="menu-item-3213">
-                                                    <a href="http://mis.misutulsa.com/sources/resources.html">Aptana</a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3213" id="menu-item-3213">
-                                                    <a href="http://mis.misutulsa.com/sources/resources.html">MySQL</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="col-md-3 4">
-                                            <ul>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3213" id="menu-item-3213">
-                                                    <a href="http://mis.misutulsa.com/sources/resources.html">WinSCP</a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3213" id="menu-item-3213">
-                                                    <a href="http://mis.misutulsa.com/sources/resources.html">XAMPP</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="col-md-3 8">
-                                            <ul>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3213" id="menu-item-3213">
-                                                    <a href="http://mis.misutulsa.com/sources/resources.html">w3schools</a>
-                                                </li>
-                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3213" id="menu-item-3213">
-                                                    <a href="http://mis.misutulsa.com/sources/resources.html">CodeAcademy</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-2456" id="menu-item-2456">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="http://mis.misutulsa.com/sources/itu.html">iTU</a>
-
-
-
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1779" id="menu-item-1779">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="http://mis.misutulsa.com/sources/healthcare.html">Healthcare Informatics</a>
-
-
-
-                    <li class="last-item user-icon menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-2456" id="menu-item-2456">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href=" http://mis.misutulsa.com/sources/career.html">Career</a>
-
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-</header>
+							
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-2467" id="menu-item-2467">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="http://mis.misutulsa.com/sources/career.html">Career Opportunities</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
 
 
 
@@ -326,12 +283,11 @@
             <div>
                 <h3><a href="#ituOverview">iTU Overview</a></h3>
                 <h3><a href="#membershipReq">Membership Requirements</a></h3>
-                <h3><a href="#officers">Officers</a></h3>
-                <h3><a href="#jobDesc">Officer Job Description</a></h3>
-
-
-
-                <h3><a href="#apply">Become a Officer</a></h3>
+                <h3><a href="http://mis.misutulsa.com/sources/officers.html" target="_blank">iTU Officers</a></h3>
+                <h3><a href="#apply">Become an Officer</a></h3>
+                <h3><a href="#mail">iTU Mailing List</a></h3>
+                <h3><a href="#mentor">Mentorship Program</a></h3>
+                <h3><a href="mailto:ituutulsa@gmail.com">Contact iTU</a></h3>
             </div>
 
             <div style="margin-top: 10%">
@@ -345,127 +301,224 @@
                     <!--   <header class="entry-header">
                            <h1 class="entry-title">iTU</h1>
                        </header><!-- .entry-header -->
-
                     <div class="row">
                         <div class="col-sm-10">
                             <div class="module module-columns">
                                 <div class="row">
-
-                                    <div class="col-sm-12">
+                                    <div class="col-sm-12">                                  
+                                        <h2 name="ituOverview">Information Technologists United Overview</h2>
                                         <p>
-                                        <h2>Information Technologists United Overview</h2>
-                                        <p>
-                                            Information Technologists United, also known as iTU, is a professional organization for MIS majors and minors. Through peer to peer mentoring, professional events, and company presentations, iTU prepares undergraduate students for internships and jobs relating to MIS.                                       </p>
-                                        <hr />
-                                        <h2>Membership Requirements</h2>
+                                            Information Technologists United, also known as iTU, is a professional organization for MIS majors and minors. 
+                                            Through peer to peer mentoring, professional development events, and company presentations, iTU prepares undergraduate 
+                                            students for internships and jobs relating to MIS.                               
+                                        </p>
+                                        <h2 name="membershipReq">Membership Requirements</h2>
                                         <ul>
                                             <li>
                                                 Pay dues of either $20 per year or $15 per semester
                                             </li>
                                             <li>
-                                                Maintain a minimum 2.5 GPA
+                                                Maintain a minimum GPA of 2.5
                                             </li>
                                             <li>
                                                 Attend at least 3 iTU sponsored events per semester
                                             </li>
+                                            <li>
+                                            	<a href="#" target="_blank">Are you an iTU Member in Good Standing?</a>
+                                       		</li>    
 
                                         </ul>
+
+                                        <a name="apply"><h2>Interested in becoming an iTU Officer?</h2></a>
                                         <p>
-                                            <a id="officers"><h2>Officers</h2></a>
+                                            Contact Lori Leonard at <a href="mailto:lori-leonard@utulsa.edu">lori-leonard@utulsa.edu.</a>
                                         </p>
-                                      <!--  <p>
-                                            Comming Soon
+                                        
+                                        <a name="mail"><h2>Interest in joining the iTU mailing list?</h2></a>
+                                        <p>
+                                            Coming Soon!
                                         </p>
-
-                                        <a id="jobDesc"><h2>Officer Job Description</h2></a>
+                                        
+                                        <a name="mentor"><h2>Mentorship Program</h2></a>
                                         <p>
-                                        <h3>President</h3>
-
-                                        <p>  As President, Abby is responsible for overseeing the iTU program as a whole, including coordinating and facilitating monthly professional meetings, helping officers plan events such as mentorship events and banquets, and serving as the liaison between students, MIS faculty, and IT professionals in the Tulsa/Oklahoma area wishing to come speak to MIS students. She makes sure each officer is fulfilling their respective duties and serves as a resource if any additional assistance is needed for operations and logistics in the organization to run smoothly.
-
-                                        <h3> Vice President</h3>
-                                        As Vice President, Rachael is responsible for assisting the President in coordinating monthly meetings and ordering food for executive meetings for the officers. Her primary responsibility is planning the iTU End of the Year Banquet, where closing remarks are made about the MIS program, seniors and outstanding IT TU alum are recognized, and officer installations for incoming officers take place.
-                                        <p>
-                                        <h3>Treasurer</h3>
-                                        As Treasurer, David is responsible for handling all finances of our organization. He ensures our budget is kept on track, dues are being collected by members, and reimbursements are taken care of properly and in a timely manner.
-
-                                        <p>    <h3>Secretary</h3>
-                                        As Secretary, Melanie is responsible for recording officer meeting minutes and send out after meeting complete. She creates sign-in sheets for each professional meeting to help us keep track of our members’ attendance. She also creates the digital signage to be displayed at different places throughout campus, as well as signage to be sent to all MIS majors and minors prior to our monthly professional meetings.
-                                        <p>
-                                        <h3>Mentorship Chair</h3>
-
-                                        This position is responsible for advertising and arranging iTU Mentorship events, pairing mentee sign-ups with mentors, and general recruitment of Management Information Systems majors and minors.
-
-                                        <p>
-                                        <h3>Junior Representative</h3>
-
-                                        As Junior Representative, Ryan is responsible for communication with the junior class about all things iTU. This involves encouraging attendance, getting people excited about events, and continuing to spread iTU throughout campus. Recruitment and communication are his primary jobs.
-
-                                        <p>
-                                        <h3>Senior Representative</h3>
-
-                                        As Senior Representative, Jocelyn is responsible for communication with the junior class about all things iTU. This involves encouraging attendance, getting people excited about events, and continuing to spread iTU throughout campus. Like junior representative, recruitment and communication are her primary jobs.
-
-                                        <p>
-                                        <h3> Web Master</h3>
+                                            Coming Soon!
                                         </p>
--->
-                                        <a id="apply"><h2>Interest in Becoming an Officer?</h2></a>
-                                        <p>
-                                            Comming Soon
-                                        </p>
-                                        <h2>Mentorship Program</h2>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
-                        <!--     <div class="col-sm-6">
-                                 <div class="module module-columns">
-                                     <div class="row">
+                      </div>
+                    </article>
+                  </div>
+               </div>
+             </div>
+         </div>
 
-                                        <div class="col-sm-12">
-                                             <h2>Calendar of Events</h2>
+<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer-widgets">
+						<aside id="nav_menu-2" class="col-sm-4 col-md-3 widget widget_nav_menu">
+							<h6 class="widget-title">Academics</h6>
+							<div class="menu-footer-academics-container">
+								<ul id="menu-footer-academics" class="menu">
+									<li id="menu-item-1442" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1442">
+										<a href="https://artsandsciences.utulsa.edu/">Kendall College of Arts &#038; Sciences</a>
+									</li>
+									<li id="menu-item-1443" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1443">
+										<a href="https://business.utulsa.edu/">Collins College of Business</a>
+									</li>
+									<li id="menu-item-1444" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1444">
+										<a href="https://engineering.utulsa.edu/">College of Engineering &#038; Natural Sciences</a>
+									</li>
+									<li id="menu-item-3428" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3428">
+										<a href="https://healthsciences.utulsa.edu/">College of Health Sciences</a>
+									</li>
+									<li id="menu-item-1446" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1446">
+										<a href="https://law.utulsa.edu/">College of Law</a>
+									</li>
+									<li id="menu-item-3427" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3427">
+										<a href="https://graduate.utulsa.edu/">Graduate School</a>
+									</li>
+									<li id="menu-item-3682" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3682">
+										<a href="https://utulsa.edu/academics/continuing-education/">Continuing Education</a>
+									</li>
+									<li id="menu-item-4888" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4888">
+										<a href="https://utulsa.edu/departments-schools/">Departments &amp; Schools</a>
+									</li>
+								</ul>
+							</div>
+						</aside>
+						<aside id="nav_menu-3" class="col-sm-4 col-md-3 widget widget_nav_menu">
+							<h6 class="widget-title">Offices &#038; Services</h6>
+							<div class="menu-offices-services-container">
+								<ul id="menu-offices-services" class="menu">
+									<li id="menu-item-1436" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1436">
+										<a href="https://admission.utulsa.edu/">Admission and Financial Aid</a>
+									</li>
+									<li id="menu-item-3685" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3685">
+										<a href="https://utulsa.edu/campus-life/alexander-health-center/">Alexander Health Center</a>
+									</li>
+									<li id="menu-item-7728" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7728">
+										<a href="https://utulsa.edu/offices/bursar/">Bursar</a>
+									</li>
+									<li id="menu-item-3687" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3687">
+										<a href="https://utulsa.edu/campus-life/campus-recreation/collins-fitness-center/">Collins Fitness Center</a>
+									</li>
+									<li id="menu-item-3688" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3688">
+										<a href="https://admission.utulsa.edu/financial-aid/">Financial Aid</a>
+									</li>
+									<li id="menu-item-3689" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3689">
+										<a href="https://utulsa.edu/mcfarlin-library/">McFarlin Library</a>
+									</li>
+									<li id="menu-item-3690" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3690">
+										<a href="https://utulsa.edu/offices/registrar/">Office of the Registrar</a>
+									</li>
+									<li id="menu-item-3871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3871">
+										<a href="https://utulsa.edu/offices/">Offices</a>
+									</li>
+								</ul>
+							</div>
+						</aside>
+						<aside id="nav_menu-4" class="col-sm-4 col-md-2 widget widget_nav_menu">
+							<h6 class="widget-title">Explore</h6>
+							<div class="menu-explore-container">
+								<ul id="menu-explore" class="menu">
+									<li id="menu-item-3691" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3691">
+										<a href="https://utulsa.edu/a-z/">A-Z Index</a>
+									</li>
+									<li id="menu-item-3712" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3712">
+										<a href="https://utulsa.edu/arts-at-tu/">Arts @ TU</a>
+									</li>
+									<li id="menu-item-6896" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6896">
+										<a target="_blank" href="http://bulletin.utulsa.edu/">Bulletin/Course Catalog</a>
+									</li>
+									<li id="menu-item-1426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1426">
+										<a target="_blank" href="https://utulsa.edu/courses/schedule/">Courses</a>
+									</li>
+									<li id="menu-item-5522" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5522">
+										<a href="https://utulsa.edu/degrees/">Degrees</a>
+									</li>
+									<li id="menu-item-3695" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3695">
+										<a href="https://utulsa.edu/maps/">Maps</a>
+									</li>
+									<li id="menu-item-3696" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3696">
+										<a href="http://tulsa.university-tour.com" onclick="__gaTracker('send', 'event', 'outbound-widget', 'http://tulsa.university-tour.com', 'Virtual Tour');" target="_blank">Virtual Tour</a>
+									</li>
+								</ul>
+							</div>
+						</aside><div class="clearfix visible-sm" style="margin: 60px 0;"></div>
+						<aside id="nav_menu-5" class="col-sm-4 col-md-2 widget widget_nav_menu">
+							<h6 class="widget-title">Resources</h6>
+							<div class="menu-footer-resources-container">
+								<ul id="menu-footer-resources" class="menu">
+									<li id="menu-item-4865" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4865">
+										<a href="https://utulsa.edu/academic-calendar/">Academic Calendar</a>
+									</li>
+									<li id="menu-item-3699" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3699">
+										<a href="https://utulsa.edu/offices/campus-security/">Campus Security</a>
+									</li>
+									<li id="menu-item-5527" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5527">
+										<a href="/contact/">Contact</a>
+									</li>
+									<li id="menu-item-6895" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6895">
+										<a href="https://utulsa.edu/about/working-at-tu/">Employment</a>
+									</li>
+									<li id="menu-item-3697" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3697">
+										<a target="_blank" href="http://calendar.utulsa.edu">Events Calendar</a>
+									</li>
+									<li id="menu-item-3698" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3698">
+										<a href="https://utulsa.edu/offices/information-technology/">Information Technology</a>
+									</li>
+									<li id="menu-item-3702" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3702">
+										<a href="https://portal.utulsa.edu">TU Portal</a>
+									</li>
+									<li id="menu-item-6012" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6012">
+										<a href="https://utulsa.edu/offices/university-relations/digital-communications/web-site-issue-report/">Web Site Issue Report</a>
+									</li>
+								</ul>
+							</div>
+						</aside>
+						<aside id="socials_widget-3" class="col-sm-4 col-md-2 widget socials-widget">
+							<h6 class="widget-title">Connect With TU</h6>
+							<div class="widget-wrap">
 
-                                             <div style="box-sizing: border-box; background: #f1f7fb; position: relative; border-image-source: none; border-image-slice: 100% 100% 100% 100%; border-image-width: 1 1 1 1; border-image-outset: 0 0 0 0; border-image-repeat: stretch stretch; padding: 15px 15px 10px 15px; margin: 0px 0px 25px 0px; border: 1px solid #8bb8e8;">
-                                                 <h2>Department Page</h2>
-                                                 <ul class="list-type-arrows">
-                                                     <li>
-                                                         <a href="sources/exploreMIS.html" target="_blank">Explore Management Information Systems</a>
-                                                     </li>
-                                                 </ul>
-                                                 <h2>Schedule</h2>
-                                                 <ul class="list-type-arrows">
-                                                     <li>
-                                                         <a href="https://business.utulsa.edu/departments-schools/school-of-accounting-management-information-systems/accounting-undergraduate-programs/typical-schedule/" target="_blank">Typical Four Year Schedule</a>
-                                                     </li>
-                                                 </ul>
-                                                 <h2>Faculty</h2>
-                                                 <ul class="list-type-arrows">
-                                                     <li>
-                                                         <a href="https://faculty.utulsa.edu/collins-college-of-business/accounting-and-mis" target="_blank">Learn about Management Information Systems Faculty</a>
-                                                     </li>
-                                                 </ul>
-                                                 <h2>Schedule of Courses</h2>
-                                                 <ul class="list-type-arrows">
-                                                     <li>
-                                                         <a href="https://utulsa.edu/courses/schedule/" target="_blank">Review Current Course Offerings</a>
-                                                     </li>
-                                                 </ul>
-                                                 <h2>Questions</h2>
-                                                 <ul class="list-type-arrows">
-                                                     <li>
-                                                         <a href="https://admission.utulsa.edu/apply/contact/" target="_blank">Contact the Admission Office</a>
-                                                     </li>
-                                                 </ul>
-                                             </div>
-                                         </div>
+								<a class="icon-facebook" href="https://www.facebook.com/utulsa.edu" title="facebook" target="_blank">
+								<svg class="icon icon-facebook">
+									<use xlink:href="#icon-facebook"></use>
+								</svg> </a>
 
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
+								<a class="icon-twitter" href="https://twitter.com/utulsa" title="twitter" target="_blank">
+								<svg class="icon icon-twitter">
+									<use xlink:href="#icon-twitter"></use>
+								</svg> </a>
 
-                     </article>
-                     </div>
-                     </div>
+								<a class="icon-instagram" href="http://instagram.com/utulsa" title="instagram" target="_blank">
+								<svg class="icon icon-instagram">
+									<use xlink:href="#icon-instagram"></use>
+								</svg> </a>
+
+								<div class="content-wrap">
+									<a href="/social-media-directory/">Social Media Directory</a>
+									<a href="/social-media-policy/">Social Media Policy</a>
+								</div>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</div>
+
+			<div class="site-info">
+				<div class="container">
+					&copy; 2016 The University of Tulsa. All Rights Reserved.
+				</div>
+			</div>
+		</footer>
+
+		<script type='text/javascript' src='https://35ht6t2ynx0p1ztf961h81r1-wpengine.netdna-ssl.com/wp-content/themes/tulsa/assets/js/plugins/ibox.min.js?ver=1.3.0'></script>
+		<script type='text/javascript' src='https://35ht6t2ynx0p1ztf961h81r1-wpengine.netdna-ssl.com/wp-content/themes/tulsa/assets/js/plugins.min.js?ver=1.3.0'></script>
+		<script type='text/javascript' src='https://35ht6t2ynx0p1ztf961h81r1-wpengine.netdna-ssl.com/wp-content/themes/tulsa/assets/js/app.min.js?ver=1.3.0'></script>
+		<script type='text/javascript' src='https://35ht6t2ynx0p1ztf961h81r1-wpengine.netdna-ssl.com/wp-includes/js/wp-embed.min.js?ver=4.4.2'></script>
+
+	</body>
+</html>
